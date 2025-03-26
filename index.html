@@ -55,53 +55,8 @@
         .fade {
             opacity: 0;
             animation: translateXAnimation 1s ease-out forwards;
-        }
-
-        .item1,
-        .item2,
-        .item3,
-        .item4,
-        .item5,
-        .item6 {
             animation-delay: var(--delay, 0s);
         }
-
-        /*SCENE 1*/
-        #scene .maison {
-            height: 250px;
-            z-index: 10;
-            left: 0 !important;
-            top: 200px !important;
-        }
-
-        #scene .collineDroite {
-            z-index: 8;
-            text-align: left;
-        }
-
-        #scene .collineGauche {
-            z-index: 5;
-            left: 0 !important;
-        }
-
-        #scene .nuage1 {
-            height: 80px;
-            top: 2%;
-            padding-left: 70%;
-        }
-
-        #scene .nuage2 {
-            height: 80px;
-            top: 5%;
-            padding-left: 30%;
-        }
-
-        /*SCENE 2*/
-
-        #scene2 .solChateaux {
-            height: 300px;
-        }
-
         .titre {
             font-size: 50px;
             font-weight: bold;
@@ -113,38 +68,81 @@
             transform: translate(-50%, -50%);
         }
 
+        /*sectionMaison*/
+        #sectionMaison .maison {
+            height: 250px;
+            z-index: 10;
+            left: 0 !important;
+            top: 200px !important;
+        }
+
+        #sectionMaison .collineDroite {
+            z-index: 8;
+            text-align: left;
+        }
+
+        #sectionMaison .collineGauche {
+            z-index: 5;
+            left: 0 !important;
+        }
+
+        #sectionMaison .nuage1 {
+            height: 80px;
+            top: 2%;
+            padding-left: 70%;
+        }
+
+        #sectionMaison .nuage2 {
+            height: 80px;
+            top: 5%;
+            padding-left: 30%;
+        }
+
+        /*sectionChateau*/
+
+        #sectionChateau .solChateaux {
+            height: 300px;
+        }
+
+
     </style>
 </head>
 
 <body>
+    <!---
+        Pour chaque div juste avant l'image ajouter une class "fade parallax" et un style="--delays: xs"
+        Pour chaque section ajouter un id correspondant à la div
+        Pour chaque image mettre un data-depth
+        Pour css mettre le nom de la div puis la class de l'image avec un commentaire avant
+    --->
     <div class="reveal">
         <div class="slides">
             <section data-background-color="lightblue" data-transition="fade-in slide-in">
-                 <span class="titre">
-                     Les métamorphoses de Lila
-                 </span>
+                <span class="titre">
+                    Les métamorphoses de Lila
+                </span>
             </section>
-            <section data-background-color="lightblue" id="scene" data-transition="fade-in slide-in">
-                <div class="fade item1" style="--delay: 0s;">
+            <section data-background-color="lightblue" id="sectionMaison" data-transition="fade-in slide-in">
+                <div class="fade parallax" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_maison/colline/colline_droite.svg" alt="colline droite"
                         class="collineDroite">
                 </div>
-                <div class="fade item2" id="scene2" style="--delay: 0.8s;">
+                <div class="fade parallax" style="--delay: 0.8s;">
                     <img data-depth="-0.02" src="image/decor_maison/colline/colline_gauche.svg" alt="colline gauche"
                         class="collineGauche">
                 </div>
-                <div class="fade item3" id="scene3" style="--delay: 1.3s;">
+                <div class="fade parallax" style="--delay: 1.3s;">
                     <img data-depth="0.05" src="image/decor_maison/maison/maison.svg" alt="maison" class="maison">
                 </div>
-                <div class="fade item4" id="scene4" style="--delay: 1.6s;">
+                <div class="fade parallax" style="--delay: 1.6s;">
                     <img data-depth="-0.08" src="image/decor_maison/nuage/nuage1.svg" alt="nuage 1" class="nuage1">
                 </div>
-                <div class="fade item5" id="scene5" style="--delay: 1.9s;">
+                <div class="fade parallax" style="--delay: 1.9s;">
                     <img data-depth="0.07" src="image/decor_maison/nuage/nuage2.svg" alt="nuage 2" class="nuage2">
                 </div>
             </section>
             <section>
-                <div class="fade item1" id="scene6" style="--delay: 0s;">
+                <div class="fade item1" id="sectionChateau" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_chateau/sol_chateau.svg" alt="sol partie châteaux"
                         class="solChateaux">
                 </div>
@@ -199,12 +197,9 @@
         });
 
         //AJOUTER LES SCENES ICI
-        ['scene', 'scene2', 'scene3', 'scene4', 'scene5', 'scene6', 'scene7', 'scene8', 'scene9', 'scene10', 'scene11', 'scene12', 'scene13', 'scene14', 'scene15'].forEach(id => {
-            var scene = document.getElementById(id);
-            if (scene) {
-                var parallaxInstance = new Parallax(scene, { relativeInput: true });
-                parallaxInstance.friction(0.2, 0.2, 0.3);
-            }
+        document.querySelectorAll('.parallax').forEach(parallax => {
+            var parallaxInstance = new Parallax(parallax, { relativeInput: true });
+            parallaxInstance.friction(0.2, 0.2, 0.3);
         });
 
     </script>
