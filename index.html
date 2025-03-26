@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -10,35 +11,85 @@
     <link rel="stylesheet" href="dist/reveal.css">
     <link rel="stylesheet" href="dist/theme/black.css">
 
-	<link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/animate.css">
 
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="plugin/highlight/monokai.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <style>
+        /*CSS BASE*/
         @keyframes translateXAnimation {
             0% {
                 opacity: 0;
                 transform: translateX(-100%);
             }
+
             100% {
                 opacity: 1;
                 transform: translateX(0);
             }
         }
-        .reveal{
-            width: 1200px;
-            height: 724px;
+
+        .reveal {
+            width: 1280px;
+            height: 720px;
             margin: auto;
         }
+
+        .reveal .slides {
+            width: 100% !important;
+            height: 100% !important;
+        }
+
         .fade {
             opacity: 0;
             animation: translateXAnimation 1s ease-out forwards;
         }
 
-        .item1, .item2, .item3, .item4, .item5, .item6 {
+        .item1,
+        .item2,
+        .item3,
+        .item4,
+        .item5,
+        .item6 {
             animation-delay: var(--delay, 0s);
+        }
+
+        /*SCENE 1*/
+        #scene .maison {
+            height: 250px;
+            z-index: 10;
+            left: 0 !important;
+            top: 200px !important;
+        }
+
+        #scene .collineDroite {
+            z-index: 8;
+            text-align: left;
+        }
+
+        #scene .collineGauche {
+            z-index: 5;
+            left: 0 !important;
+        }
+
+        #scene .nuage1 {
+            height: 80px;
+            top: 2%;
+            padding-left: 70%;
+        }
+
+        #scene .nuage2 {
+            height: 80px;
+            top: 5%;
+            padding-left: 30%;
+        }
+
+        /*SCENE 2*/
+
+        #scene2 .solChateaux {
+            height: 300px;
         }
 
         /*.item2 {
@@ -56,85 +107,45 @@
         .item5 {
             animation-delay: var(--delay, 2.8s);
         }*/
-
-        #scene, #scene2, #scene3, #scene4, #scene5, #scene6, #scene7, #scene8{
+        /*#scene, #scene2, #scene3, #scene4, #scene5, #scene6, #scene7, #scene8{
+        
             bottom: 0;
             position: absolute;
             width: 100% !important;
-        }
-
-        #scene{
-            height: 100vh !important;
-        }
-        #scene .maison{
-            height: 250px;
-            z-index: 10;
-            left: 0 !important;
-            top: 200px !important;
-        }
-
-        #scene2{
+        }*/
+        /*#scene2{
             display: flex;
             justify-content: flex-end;
-        }
-        #scene2 .collineDroite{
-            z-index: 8;
-            text-align: left;
-        }
-
-        #scene3 .collineGauche{
-            z-index: 5;
-            left: 0 !important;
-        }
-
-        #scene4{
+        }*/
+        /*#scene4{
             top:0;
             height: 100vh !important;
-        }
-        #scene4 .nuage1{
-            height: 80px;
-            top:2%;
-            padding-left:  70%;
-        }
-
-        #scene5{
+        }*/
+        /*#scene5{
             top:10%;
             height: 100vh !important;
-        }
-        #scene5 .nuage2{
-            height: 80px;
-            top:5%;
-            padding-left:  30%;
-        }
-
-        #scene6{
+        }*/
+        /*#scene6{
             display: flex;
             justify-content: center;
-        }
-        .present{
+        }*/
+        /*.present{
             position: relative;
             top:100%;
             bottom: 0;
             right: 0;
-        }
-        .solChateaux{
-            height: 300px;
-        }
-
-        .reveal .slides {
-            width: 100% !important;
-            height: 100% !important;
-        }
+        }*/
     </style>
 </head>
+
 <body>
-<div class="reveal">
-    <div class="slides">
-        <section data-background-color="aquamarine">
-            Slide 1
-        </section>
-        <section data-background-color="lightblue">
-            <!---<div id="scene" class="fade item1" style="--delay: 0s;">
+    <div class="reveal">
+        <div class="slides">
+            <section data-background-color="aquamarine">
+                Slide 1
+            </section>
+            <section data-background-color="lightblue" id="scene">
+                <!---<div id="scene" class="fade item1" style="--delay: 0s;">
                 <div data-depth="-0.1">My first Layer!</div>
                 <div data-depth="0.2">My second Layer!</div>
             </div>
@@ -143,104 +154,81 @@
                 <div data-depth="0.1">My second Layer!</div>
             </div>--->
 
-            <div id="scene2" class="fade item1" style="--delay: 0s;">
-                <img data-depth="0.04" src="image/decor_maison/colline/colline_droite.svg" alt="colline droite" class="collineDroite">
-            </div>
-            <div id="scene3" class="fade item2" style="--delay: 0.8s;">
-                <img data-depth="-0.02" src="image/decor_maison/colline/colline_gauche.svg" alt="colline gauche" class="collineGauche">
-            </div>
-            <div id="scene" class="fade item3" style="--delay: 1.3s;">
-                <img data-depth="0.05" src="image/decor_maison/maison/maison.svg" alt="maison" class="maison">
-            </div>
-            <div id="scene4" class="fade item4" style="--delay: 1.6s;">
-                <img data-depth="-0.08" src="image/decor_maison/nuage/nuage1.svg" alt="nuage 1" class="nuage1">
-            </div>
-            <div id="scene5" class="fade item5" style="--delay: 1.9s;">
-                <img data-depth="0.07" src="image/decor_maison/nuage/nuage2.svg" alt="nuage 2" class="nuage2">
-            </div>
-        </section>
-        <section>
-            <!---<div id="scene3" class="fade item3" style="--delay: 0s;">
-                <div data-depth="-0.1">My first Layer!</div>
-                <div data-depth="-0.2">My second Layer!</div>
-            </div>
-            <div id="scene4" class="fade item4" style="--delay: 0.8s;">
-                <div data-depth="0.2">My first Layer!</div>
-                <div data-depth="0.1">My second Layer!</div>
-            </div>--->
-            <!--<div id="scene6" class="fade item1" style="--delay: 0s;">
-                <img data-depth="0.04" src="image/decor_maison/colline/colline_droite.svg" alt="colline droite" class="collineDroite">
-            </div>
-            <div id="scene7" class="fade item2" style="--delay: 0.8s;">
-                <img data-depth="-0.02" src="image/decor_maison/colline/colline_gauche.svg" alt="colline gauche" class="collineGauche">
-            </div>
-            <div id="scene5" class="fade item3" style="--delay: 1.3s;">
-                <img data-depth="0.05" src="image/decor_maison/maison/maison.svg" alt="maison" class="maison">
-            </div>
-            <div id="scene8" class="fade item4" style="--delay: 1.6s;">
-                <img data-depth="-0.08" src="image/decor_maison/nuage/nuage1.svg" alt="nuage 1" class="nuage1">
-            </div>-->
-            <div id="scene6" class="fade item1" style="--delay: 0s;">
-                <img data-depth="0.04" src="image/decor_chateau/sol_chateau.svg" alt="sol partie châteaux" class="solChateaux">
-            </div>
+                <div class="fade item1" style="--delay: 0s;">
+                    <img data-depth="0.04" src="image/decor_maison/colline/colline_droite.svg" alt="colline droite"
+                        class="collineDroite">
+                </div>
+                <div class="fade item2" style="--delay: 0.8s;">
+                    <img data-depth="-0.02" src="image/decor_maison/colline/colline_gauche.svg" alt="colline gauche"
+                        class="collineGauche">
+                </div>
+                <div class="fade item3" style="--delay: 1.3s;">
+                    <img data-depth="0.05" src="image/decor_maison/maison/maison.svg" alt="maison" class="maison">
+                </div>
+                <div class="fade item4" style="--delay: 1.6s;">
+                    <img data-depth="-0.08" src="image/decor_maison/nuage/nuage1.svg" alt="nuage 1" class="nuage1">
+                </div>
+                <div class="fade item5" style="--delay: 1.9s;">
+                    <img data-depth="0.07" src="image/decor_maison/nuage/nuage2.svg" alt="nuage 2" class="nuage2">
+                </div>
+            </section>
+            <section>
+                <div id="scene6" class="fade item1" style="--delay: 0s;">
+                    <img data-depth="0.04" src="image/decor_chateau/sol_chateau.svg" alt="sol partie châteaux"
+                        class="solChateaux">
+                </div>
 
-        </section>
-        <section>Slide 4</section>
-        <section>Slide 5</section>
-        <section>Slide 6</section>
-        <section>Slide 7</section>
-        <section>Slide 8</section>
-        <section>Slide 9</section>
-        <section>Slide 10</section>
-        <section>Slide 11</section>
-        <section>Slide 12</section>
-        <section>Slide 13</section>
-        <section>Slide 14</section>
-        <section>Slide 15</section>
-        <section>Slide 16</section>
-        <section>Slide 17</section>
-        <section>Slide 18</section>
-        <section>Slide 19</section>
-        <section>Slide 20</section>
+            </section>
+            <section>Slide 4</section>
+            <section>Slide 5</section>
+            <section>Slide 6</section>
+            <section>Slide 7</section>
+            <section>Slide 8</section>
+            <section>Slide 9</section>
+            <section>Slide 10</section>
+            <section>Slide 11</section>
+            <section>Slide 12</section>
+            <section>Slide 13</section>
+            <section>Slide 14</section>
+            <section>Slide 15</section>
+            <section>Slide 16</section>
+            <section>Slide 17</section>
+            <section>Slide 18</section>
+            <section>Slide 19</section>
+            <section>Slide 20</section>
+        </div>
     </div>
-</div>
-<!--<script src="js/wow.min.js"></script>-->
-<script src="dist/reveal.js"></script>
-<script src="plugin/notes/notes.js"></script>
-<script src="plugin/markdown/markdown.js"></script>
-<script src="plugin/highlight/highlight.js"></script>
-<script src="plugin/zoom/zoom.js"></script>
+    <!--<script src="js/wow.min.js"></script>-->
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
 
-<script>
-    // More info about initialization & config:
-    // - https://revealjs.com/initialization/
-    // - https://revealjs.com/config/
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
 
-	//new WOW().init();
+        //new WOW().init();
 
-    Reveal.initialize({
-        hash: true,
+        Reveal.initialize({
+            hash: true,
 
-        // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
-    });
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
+        });
 
-    ['scene', 'scene2', 'scene3', 'scene4', 'scene5', 'scene6', 'scene7', 'scene8'].forEach(id => {
-        var scene = document.getElementById(id);
-        if (scene) {
-            var parallaxInstance = new Parallax(scene, { relativeInput: true });
-            parallaxInstance.friction(0.2, 0.2, 0.3);
-        }
-    });
+        //AJOUTER LES SCENES iciiiiiiii
+        ['scene', 'scene2', 'scene3', 'scene4', 'scene5', 'scene6', 'scene7', 'scene8', 'scene9', 'scene10', 'scene11', 'scene12', 'scene13', 'scene14', 'scene15'].forEach(id => {
+            var scene = document.getElementById(id);
+            if (scene) {
+                var parallaxInstance = new Parallax(scene, { relativeInput: true });
+                parallaxInstance.friction(0.2, 0.2, 0.3);
+            }
+        });
 
-    // Accéder à un élément spécifique
-    //var element1 = document.getElementById('element1');
-    //var element2 = document.getElementById('element2');
-
-    // Changer la profondeur d'un élément en dynamique
-    //element1.setAttribute('data-depth', '0.1');
-    //element2.setAttribute('data-depth', '0.7');
-
-</script>
+    </script>
 </body>
+
 </html>
