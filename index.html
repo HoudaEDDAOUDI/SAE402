@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="dist/reveal.css">
     <link rel="stylesheet" href="dist/theme/black.css">
 
-    <link rel="stylesheet" href="css/animate.css">
+    <!--<link rel="stylesheet" href="css/animate.css">-->
 
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -31,12 +31,20 @@
             }
         }
 
-        .reveal {
-            width: 1280px;
-            height: 720px;
-            margin: auto;
+        body {
+            position: relative;
+            height: 100vh;
+            margin: 0;
         }
 
+        .reveal {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 1280px;
+            height: 720px;
+        }
         .reveal .slides {
             width: 100% !important;
             height: 100% !important;
@@ -92,68 +100,29 @@
             height: 300px;
         }
 
-        /*.item2 {
-            animation-delay: var(--delay, 0.8s);
-        }
-
-        .item3 {
-            animation-delay: var(--delay, 1.5s);
-        }
-
-        .item4 {
-            animation-delay: var(--delay, 2.2s);
-        }
-
-        .item5 {
-            animation-delay: var(--delay, 2.8s);
-        }*/
-        /*#scene, #scene2, #scene3, #scene4, #scene5, #scene6, #scene7, #scene8{
-        
-            bottom: 0;
+        .titre {
+            font-size: 50px;
+            font-weight: bold;
+            color: black;
+            text-transform: uppercase;
             position: absolute;
-            width: 100% !important;
-        }*/
-        /*#scene2{
-            display: flex;
-            justify-content: flex-end;
-        }*/
-        /*#scene4{
-            top:0;
-            height: 100vh !important;
-        }*/
-        /*#scene5{
-            top:10%;
-            height: 100vh !important;
-        }*/
-        /*#scene6{
-            display: flex;
-            justify-content: center;
-        }*/
-        /*.present{
-            position: relative;
-            top:100%;
-            bottom: 0;
-            right: 0;
-        }*/
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
     </style>
 </head>
 
 <body>
     <div class="reveal">
         <div class="slides">
-            <section data-background-color="aquamarine">
-                Slide 1
+            <section data-background-color="lightblue" data-transition="fade-in slide-in">
+                <span class="titre">
+                    Les métamorphoses de Lila
+                </span>
             </section>
-            <section data-background-color="lightblue" id="scene">
-                <!---<div id="scene" class="fade item1" style="--delay: 0s;">
-                <div data-depth="-0.1">My first Layer!</div>
-                <div data-depth="0.2">My second Layer!</div>
-            </div>
-            <div id="scene2" class="fade item2" style="--delay: 0.8s;">
-                <div data-depth="-0.2">My first Layer!</div>
-                <div data-depth="0.1">My second Layer!</div>
-            </div>--->
-
+            <section data-background-color="lightblue" id="scene" data-transition="fade-in slide-in">
                 <div class="fade item1" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_maison/colline/colline_droite.svg" alt="colline droite"
                         class="collineDroite">
@@ -214,6 +183,15 @@
 
         Reveal.initialize({
             hash: true,
+            backgroundTransition: 'slide',
+            autoSlide: 5000,
+            loop: true,
+
+            keyboard: {
+                1: () => {
+                    Reveal.toggleOverview();
+                }, // do something custom when ESC is pressed
+            },
 
             // Learn about plugins: https://revealjs.com/plugins/
             plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
