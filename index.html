@@ -199,10 +199,116 @@
             left: -200px !important;
         }
 
+        /*sectionMaison2*/
+
+        #sectionMaison2 .maison {
+            height: 250px;
+            z-index: 10;
+            position: absolute;
+            top: 280px!important;
+            width: 400px;
+            filter: grayscale(100%);
+        }
+
+        #sectionMaison2 .collineDroite {
+            z-index: 8;
+            text-align: left;
+            top: 200px !important;
+            filter: grayscale(100%);
+        }
+
+        #sectionMaison2 .collineGauche {
+            z-index: 5;
+            text-align: right;
+            top: 250px !important;
+            filter: grayscale(100%);
+        }
+
+        #sectionMaison2 .nuage1 {
+            height: 80px;
+            top: 2%;
+            filter: grayscale(100%);
+        }
+
+        #sectionMaison2 .nuage2 {
+            height: 80px;
+            top: 5%;
+            padding-left: 30%;
+            filter: grayscale(100%);
+        }
+
+        #sectionMaison2 .arbre1 {
+            z-index: 10;
+            width: 300px;
+            left: 900px !important;
+            filter: grayscale(100%);
+        }
+
+        #sectionMaison2 .soleil {
+            z-index: 10;
+            width: 200px;
+            top: -250px!important;
+            left: 50px !important;
+        }
+
+        #sectionMaison2 .fille {
+            z-index: 10;
+            width: 60px;
+            top: 100px !important;
+            left: 400px !important;
+            transform: scaleX(-1)!important;
+        }
+
+        /*sectionChambre*/
+
+        #sectionChambre .fenetre {
+            width: 300px;
+            top: 100px !important;
+            left: 500px !important;
+            filter: grayscale(100%);
+        }
+
         /*sectionChateau*/
 
         #sectionChateau .solChateaux {
-            height: 300px;
+            height: 450px;
+            width: 1320px;
+            top: 300px;
+            left: -15px;
+        }
+
+        #sectionChateau .arbre1{
+            height: 600px;
+            width: 200px;
+            left: 1090px;
+            bottom: 144px;
+        }
+
+        #sectionChateau .feuillage1{
+            width: 325px;
+            height: auto;
+            top: 520px;
+            left: -10px;
+        }
+
+        #sectionChateau .feuillage2{
+            width: 475px;
+            height: auto;
+            bottom: 550px;
+            left: -15px;
+        }
+
+        #sectionChateau .chateau {
+            width: 650px;
+            height: auto;
+            left: 300px;
+        }
+
+        #sectionChateau .chemin{
+            width: 375px;
+            height: 125px;
+            top: 578px;
+            left: 685px;
         }
 
         /*SIRENE*/
@@ -366,10 +472,62 @@
                          class="nuage2">
                 </div>
             </section>
-            <section>
-                <div class="fade item1" id="sectionChateau" style="--delay: 0s;">
-                    <img data-depth="0.04" src="image/decor_chateau/sol_chateau.svg" alt="sol partie châteaux"
-                        class="solChateaux">
+            <section data-background-color="white" id="sectionMaison2" data-transition="fade-in slide-in">
+                <div class="fade parallax" style="--delay: 0s;">
+                    <img data-depth="0.04" src="image/decor_maison/colline/colline_droite.svg" alt="colline droite"
+                         class="collineDroite">
+                </div>
+                <div class="fade parallax" style="--delay: 0.8s;">
+                    <img data-depth="-0.02" src="image/decor_maison/colline/colline_gauche.svg" alt="colline gauche"
+                         class="collineGauche">
+                </div>
+                <div class="fade parallax" style="--delay: 1.3s;">
+                    <img data-depth="0.05" src="image/decor_maison/maison/maison.svg" alt="maison" class="maison">
+                </div>
+                <div class="fade parallax" style="--delay: 1.6s;">
+                    <img data-depth="-0.08" src="image/decor_maison/nuage/nuage1.svg" alt="nuage 1" class="nuage1">
+                </div>
+                <div class="fade parallax" style="--delay: 1.9s;">
+                    <img data-depth="0.07" src="image/decor_maison/nuage/nuage2.svg" alt="nuage 2" class="nuage2">
+                </div>
+                <div class="fade parallax" style="--delay: 2.2s;">
+                    <img data-depth="0.07" src="image/decor_maison/arbre/arbre1.svg" alt="arbre 1" class="arbre1">
+                </div>
+                <div class="fade parallax" style="--delay: 2.5s;">
+                    <img data-depth="0.07" src="image/decor_base/soleil/soleil1.svg" alt="soleil" class="soleil">
+                </div>
+                <div class="fade parallax" style="--delay: 2.2s;">
+                    <img data-depth="0.07" src="image/fille/profil_sac/profil_sac1.svg" alt="fille" class="fille">
+                </div>
+            </section>
+            <section data-background-color="cornflowerblue" id="sectionChambre" data-transition="fade-in slide-in">
+                <div class="fade parallax" style="--delay: 0s;">
+                    <img data-depth="0.04" src="image/decor_chambre/fenetre.svg" alt="fenetre"
+                         class="fenetre">
+                </div>
+                <div class="fade parallax" style="--delay: 0.8s;">
+                    <img data-depth="-0.02" src="image/decor_maison/colline/colline_gauche.svg" alt="colline gauche"
+                         class="collineGauche">
+                </div>
+            </section>
+            <section data-background-color="lightblue" id="sectionChateau" data-transition="fade-in slide-in">
+                <div class="fade parallax solChateaux" style="--delay: 1.9s;">
+                    <img data-depth="0.04" src="image/decor_chateau/sol.png" alt="sol partie châteaux">
+                </div>
+                <div class="fade parallax chateau" style="--delay: 1.9s;">
+                    <img data-depth="0.07" src="image/decor_chateau/chateau_1.png" alt="chateau" class="">
+                </div>
+                <div class="fade parallax feuillage1" style="--delay: 1.9s;">
+                    <img data-depth="0.07" src="image/decor_chateau/feuillage1.png" alt="feuillage1">
+                </div>
+                <div class="fade parallax feuillage2" style="--delay: 1.9s;">
+                    <img data-depth="0.07" src="image/decor_chateau/feuillage2.png" alt="feuillage2" class="">
+                </div>
+                <div class="fade parallax arbre1" style="--delay: 1.9s;">
+                    <img data-depth="0.07" src="image/decor_chateau/arbre_1.png" alt="arbre1" class="">
+                </div>
+                <div class="fade parallax chemin" style="--delay: 1.9s;">
+                    <img data-depth="0.07" src="image/decor_chateau/chemin_1.png" alt="chemin" class="">
                 </div>
             </section>
             <section data-background-color="lightblue" id="sectionSirene" data-transition="fade-in slide-in">
