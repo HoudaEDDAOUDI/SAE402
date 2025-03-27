@@ -68,22 +68,44 @@
             transform: translate(-50%, -50%);
         }
 
+        section {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        section .parallax {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
         /*sectionMaison*/
+
         #sectionMaison .maison {
             height: 250px;
             z-index: 10;
-            left: 0 !important;
-            top: 200px !important;
+            position: absolute;
+            top: 300px!important;
+            right: 100px!important;
         }
 
         #sectionMaison .collineDroite {
             z-index: 8;
-            text-align: left;
+            position: absolute;
+            height: 200px;
+            bottom: 0!important;
+            top: 505px!important;
+            left: 600px!important;
         }
 
         #sectionMaison .collineGauche {
             z-index: 5;
-            left: 0 !important;
+            position: absolute;
+            height: 200px;
+            bottom: 0!important;
+            top: 505px!important;
+            right: 500px!important;
         }
 
         #sectionMaison .nuage1 {
@@ -98,13 +120,46 @@
             padding-left: 30%;
         }
 
+        #sectionMaison .arbre1 {
+            height: 80px;
+            z-index: 10;
+            position: absolute;
+            top: 90%;
+            left: 10px;
+        }
+
         /*sectionChateau*/
 
         #sectionChateau .solChateaux {
             height: 300px;
         }
 
-
+        /*SIRENE*/
+        #sectionSirene{
+            width: 500px;
+        }
+        #sectionSirene .eau{
+            margin: 0;
+            width: 1280px !important;
+        }
+        #sectionSirene .item2{
+            top: 250px !important;
+            left: 400px !important;
+        }
+        #sectionSirene .item3{
+            top: 210px !important;
+            right: 200px !important;
+        }
+        #sectionSirene .sableDroite, #sectionSirene .sableGauche{
+            width: 900px !important;
+        }
+        #sectionSirene .item4{
+            top: 100px !important;
+            right: -100px !important;
+        }
+        #sectionSirene .algue1{
+            width: 150px !important;
+        }
     </style>
 </head>
 
@@ -140,6 +195,9 @@
                 <div class="fade parallax" style="--delay: 1.9s;">
                     <img data-depth="0.07" src="image/decor_maison/nuage/nuage2.svg" alt="nuage 2" class="nuage2">
                 </div>
+                <div class="fade parallax" style="--delay: 1.9s;">
+                    <img data-depth="0.07" src="image/decor_maison/arbre/arbre1.svg" alt="arbre 1" class="arbre1">
+                </div>
             </section>
             <section>
                 <div class="fade item1" id="sectionChateau" style="--delay: 0s;">
@@ -147,23 +205,20 @@
                         class="solChateaux">
                 </div>
             </section>
-            <section>Slide 4</section>
-            <section>Slide 5</section>
-            <section>Slide 6</section>
-            <section>Slide 7</section>
-            <section>Slide 8</section>
-            <section>Slide 9</section>
-            <section>Slide 10</section>
-            <section>Slide 11</section>
-            <section>Slide 12</section>
-            <section>Slide 13</section>
-            <section>Slide 14</section>
-            <section>Slide 15</section>
-            <section>Slide 16</section>
-            <section>Slide 17</section>
-            <section>Slide 18</section>
-            <section>Slide 19</section>
-            <section>Slide 20</section>
+            <section data-background-color="lightblue" id="sectionSirene" data-transition="fade-in slide-in">
+                <div class="fade parallax item1" style="--delay: 0s;">
+                    <img data-depth="0.04" src="image/decor_mer/decor_mer/eau_caillou.svg" alt="eau" class="eau">
+                </div>
+                <div class="fade parallax item2" style="--delay: 1s;">
+                    <img data-depth="-0.07" src="image/decor_mer/decor_mer/sable_droite.svg" alt="sable" class="sableDroite">
+                </div>
+                <div class="fade parallax item3" style="--delay: 1.5s;">
+                    <img data-depth="0.05" src="image/decor_mer/decor_mer/sable_gauche.svg" alt="sable" class="sableGauche">
+                </div>
+                <div class="fade parallax item4" style="--delay: 1.8s;">
+                    <img data-depth="0.03" src="image/decor_mer/algues/algue1.svg" alt="algue" class="algue1">
+                </div>
+            </section>
         </div>
     </div>
     <!--<script src="js/wow.min.js"></script>-->
