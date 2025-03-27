@@ -213,24 +213,76 @@
             margin: 0;
             width: 1280px !important;
         }
-        #sectionSirene .item2{
+        #sectionSirene .sableDroite{
             top: 250px !important;
-            left: 400px !important;
-        }
-        #sectionSirene .item3{
-            top: 210px !important;
-            right: 200px !important;
-        }
-        #sectionSirene .sableDroite, #sectionSirene .sableGauche{
+            left: 450px !important;
+            z-index: 2;
             width: 900px !important;
         }
-        #sectionSirene .item4{
-            top: 100px !important;
-            right: -100px !important;
+        #sectionSirene .sableGauche{
+            top: 210px !important;
+            right: -200px !important;
+            width: 900px !important;
+            z-index: 3;
         }
         #sectionSirene .algue1{
+            top: 100px !important;
+            right: 250px !important;
             width: 150px !important;
+            z-index: 4;
         }
+        #sectionSirene .algue2{
+            left: 1100px;
+            top: 170px;
+            z-index: 1;
+            width: 100px;
+        }
+        #sectionSirene .coquillage{
+            top: 160px;
+            left: 300px;
+            width: 100px;
+            z-index: 4;
+        }
+        #sectionSirene .crabe{
+            bottom: 300px;
+            left: 50px;
+            width: 70px;
+        }
+        #sectionSirene .hyppocampe{
+            bottom: 100px;
+            left: 150px;
+            width: 70px;
+            z-index: 4;
+        }
+        #sectionSirene .poisson{
+            bottom: 100px;
+            left: 850px;
+            width: 150px;
+            z-index: 4;
+        }
+        #sectionSirene .lilaSirene{
+            bottom: 20px;
+            left: 550px;
+            width: 150px;
+            z-index: 4;
+        }
+        #sectionSirene .sarahSirene{
+            top: 180px;
+            left: 850px;
+            width: 250px;
+            z-index: 4;
+
+        }
+        #sectionSirene .sarahSirene img:hover{
+            transform: scale(1.5);
+        }
+        #sectionSirene .garsSirene{
+            bottom: 80px;
+            left: 350px;
+            width: 100px;
+            z-index: 4;
+        }
+
     </style>
 </head>
 
@@ -324,14 +376,38 @@
                 <div class="fade parallax item1" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_mer/decor_mer/eau_caillou.svg" alt="eau" class="eau">
                 </div>
-                <div class="fade parallax item2" style="--delay: 1s;">
-                    <img data-depth="-0.07" src="image/decor_mer/decor_mer/sable_droite.svg" alt="sable" class="sableDroite">
+                <div class="fade parallax sableDroite" style="--delay: 1s;">
+                    <img data-depth="-0.07" src="image/decor_mer/decor_mer/sable_droite.svg" alt="sable">
                 </div>
-                <div class="fade parallax item3" style="--delay: 1.5s;">
-                    <img data-depth="0.05" src="image/decor_mer/decor_mer/sable_gauche.svg" alt="sable" class="sableGauche">
+                <div class="fade parallax sableGauche" style="--delay: 1.5s;">
+                    <img data-depth="0.05" src="image/decor_mer/decor_mer/sable_gauche.svg" alt="sable">
                 </div>
-                <div class="fade parallax item4" style="--delay: 1.8s;">
-                    <img data-depth="0.03" src="image/decor_mer/algues/algue1.svg" alt="algue" class="algue1">
+                <div class="fade parallax algue1" style="--delay: 1.8s;">
+                    <img data-depth="0.07" src="image/decor_mer/algues/algue1.svg" alt="algue">
+                </div>
+                <div class="fade parallax algue2" style="--delay: 1.9s;">
+                    <img data-depth="-0.04" src="image/decor_mer/algues/algue2.svg" alt="algue">
+                </div>
+                <div class="fade parallax coquillage" style="--delay: 1.9s;">
+                    <img data-depth="0.03" src="image/decor_mer/algues/coquillage.svg" alt="coquillage">
+                </div>
+                <div class="fade parallax crabe" style="--delay: 1.9s;">
+                    <img data-depth="-0.05" src="image/decor_mer/animaux/crabe.svg" alt="crabe">
+                </div>
+                <div class="fade parallax hyppocampe" style="--delay: 1.9s;">
+                    <img data-depth="0.05" src="image/decor_mer/animaux/hyppocampe.svg" alt="hyppocampe">
+                </div>
+                <div class="fade parallax poisson" style="--delay: 1.9s;">
+                    <img data-depth="-0.02" src="image/decor_mer/animaux/poissons.svg" alt="poisson">
+                </div>
+                <div class="fade parallax lilaSirene" style="--delay: 1.9s;">
+                    <img data-depth="0.02" src="image/decor_mer/personnages/lila_sirene.svg" alt="lila sirene">
+                </div>
+                <div class="fade parallax sarahSirene" style="--delay: 1.9s;">
+                    <img data-depth="-0.03" src="image/decor_mer/personnages/sirene_fille.svg" alt="sarah sirene">
+                </div>
+                <div class="fade parallax garsSirene" style="--delay: 1.9s;">
+                    <img data-depth="0.01" src="image/decor_mer/personnages/sirene_gars.svg" alt="gars sirene">
                 </div>
             </section>
         </div>
