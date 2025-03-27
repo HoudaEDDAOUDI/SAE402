@@ -86,46 +86,117 @@
             height: 250px;
             z-index: 10;
             position: absolute;
-            top: 300px!important;
-            right: 100px!important;
+            top: 280px!important;
+            width: 400px;
+            filter: grayscale(100%);
         }
 
         #sectionMaison .collineDroite {
             z-index: 8;
-            position: absolute;
-            height: 200px;
-            bottom: 0!important;
-            top: 505px!important;
-            left: 600px!important;
+            text-align: left;
+            top: 200px !important;
+            filter: grayscale(100%);
         }
 
         #sectionMaison .collineGauche {
             z-index: 5;
-            position: absolute;
-            height: 200px;
-            bottom: 0!important;
-            top: 505px!important;
-            right: 500px!important;
+            text-align: right;
+            top: 250px !important;
+            filter: grayscale(100%);
         }
 
         #sectionMaison .nuage1 {
             height: 80px;
             top: 2%;
-            padding-left: 70%;
+            filter: grayscale(100%);
         }
 
         #sectionMaison .nuage2 {
             height: 80px;
             top: 5%;
             padding-left: 30%;
+            filter: grayscale(100%);
         }
 
         #sectionMaison .arbre1 {
-            height: 80px;
             z-index: 10;
-            position: absolute;
-            top: 90%;
-            left: 10px;
+            width: 300px;
+            left: 900px !important;
+            filter: grayscale(100%);
+        }
+
+        #sectionMaison .soleil {
+            z-index: 10;
+            width: 200px;
+            top: -250px!important;
+            left: 50px !important;
+        }
+
+        #sectionMaison .fille {
+            z-index: 10;
+            width: 60px;
+            top: 100px !important;
+            left: 400px !important;
+        }
+
+        /*sectionEcole*/
+
+        #sectionEcole .ecoleSol {
+            width: 100%;
+            filter: grayscale(100%);
+        }
+
+        #sectionEcole .balancoire {
+            width: 300px;
+            top: 200px !important;
+            left: 800px !important;
+            filter: grayscale(100%);
+        }
+
+        #sectionEcole .enfant {
+            width: 100px;
+            top: -25px !important;
+            left: 100px !important;
+            filter: grayscale(100%);
+        }
+
+        #sectionEcole .harceleur {
+            width: 70px;
+            top: 100px !important;
+            left: 300px !important;
+            filter: grayscale(100%);
+        }
+
+        #sectionEcole .harceleur2 {
+            width: 70px;
+            top: 150px !important;
+            left: 400px !important;
+            filter: grayscale(100%);
+        }
+
+        #sectionEcole .soleil {
+            width: 200px;
+            top: -250px!important;
+            left: 50px !important;
+        }
+
+        #sectionEcole .fille {
+            width: 45px;
+            top: 200px !important;
+            left: 100px !important;
+            filter: grayscale(100%);
+        }
+
+        #sectionEcole .nuage1 {
+            height: 80px;
+            top: 50px!important;
+            left: 50px !important;
+        }
+
+        #sectionEcole .nuage2 {
+            height: 80px;
+            top: 20px!important;
+            left: -200px !important;
         }
 
         /*sectionChateau*/
@@ -177,7 +248,7 @@
                     Les métamorphoses de Lila
                 </span>
             </section>
-            <section data-background-color="lightblue" id="sectionMaison" data-transition="fade-in slide-in">
+            <section data-background-color="white" id="sectionMaison" data-transition="fade-in slide-in">
                 <div class="fade parallax" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_maison/colline/colline_droite.svg" alt="colline droite"
                         class="collineDroite">
@@ -195,8 +266,52 @@
                 <div class="fade parallax" style="--delay: 1.9s;">
                     <img data-depth="0.07" src="image/decor_maison/nuage/nuage2.svg" alt="nuage 2" class="nuage2">
                 </div>
-                <div class="fade parallax" style="--delay: 1.9s;">
+                <div class="fade parallax" style="--delay: 2.2s;">
                     <img data-depth="0.07" src="image/decor_maison/arbre/arbre1.svg" alt="arbre 1" class="arbre1">
+                </div>
+                <div class="fade parallax" style="--delay: 2.5s;">
+                    <img data-depth="0.07" src="image/decor_base/soleil/soleil1.svg" alt="soleil" class="soleil">
+                </div>
+                <div class="fade parallax" style="--delay: 2.2s;">
+                    <img data-depth="0.07" src="image/fille/profil_sac/profil_sac1.svg" alt="fille" class="fille">
+                </div>
+            </section>
+            <section data-background-color="white" id="sectionEcole" data-transition="fade-in slide-in">
+                <div class="fade parallax" style="--delay: 0s;">
+                    <img data-depth="0.04" src="image/decor_ecole/decor/ecole_sol.svg" alt="Ecole sol"
+                         class="ecoleSol">
+                </div>
+                <div class="fade parallax" style="--delay: 2.5s;">
+                    <img data-depth="-0.02" src="image/decor_ecole/enfant/balancoire.svg" alt="balançoire"
+                         class="balancoire">
+                </div>
+                <div class="fade parallax" style="--delay: 0.8s;">
+                    <img data-depth="0.08" src="image/decor_ecole/enfant/enfant1.svg" alt="enfant"
+                         class="enfant">
+                </div>
+                <div class="fade parallax" style="--delay: 0.8s;">
+                    <img data-depth="0.05" src="image/decor_ecole/enfant/harceleur.svg" alt="harceleur1"
+                         class="harceleur">
+                </div>
+                <div class="fade parallax" style="--delay: 0.8s;">
+                    <img data-depth="0.07" src="image/decor_ecole/enfant/harceleur2.svg" alt="harceleur2"
+                         class="harceleur2">
+                </div>
+                <div class="fade parallax" style="--delay: 0.8s;">
+                    <img data-depth="-0.02" src="image/decor_base/soleil/soleil1.svg" alt="soleil"
+                         class="soleil">
+                </div>
+                <div class="fade parallax" style="--delay: 0.8s;">
+                    <img data-depth="-0.02" src="image/fille/profil/profil2.svg" alt="fille"
+                         class="fille">
+                </div>
+                <div class="fade parallax" style="--delay: 0.8s;">
+                    <img data-depth="-0.02" src="image/decor_maison/nuage/nuage1.svg" alt="nuage1"
+                         class="nuage1">
+                </div>
+                <div class="fade parallax" style="--delay: 0.8s;">
+                    <img data-depth="-0.05" src="image/decor_maison/nuage/nuage2.svg" alt="nuage2"
+                         class="nuage2">
                 </div>
             </section>
             <section>
