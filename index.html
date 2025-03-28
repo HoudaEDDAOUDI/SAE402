@@ -436,7 +436,7 @@
             width: 60px;
             top: 100px !important;
             left: 400px !important;
-            transform: scaleX(-1)!important;
+            transform: scaleX(1)!important;
         }
 
         /*sectionEcole2*/
@@ -1873,6 +1873,7 @@
                 </div>
             </section>
         </div>
+        <audio id="mySound" src="son.mp3"></audio>
     </div>
     <!--<script src="js/wow.min.js"></script>-->
     <script src="dist/reveal.js"></script>
@@ -1904,11 +1905,74 @@
             plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
         });
 
-        //AJOUTER LES SCENES ICI
+        //PARALLAX
         document.querySelectorAll('.parallax').forEach(parallax => {
             var parallaxInstance = new Parallax(parallax, { relativeInput: true });
             parallaxInstance.friction(0.2, 0.2, 0.3);
         });
+
+        //SLIDE
+        function resetAnimations(slide) {
+            // Sélectionner tous les éléments avec la classe 'fade'
+            const fadeElements = slide.querySelectorAll('.fade');
+
+            fadeElements.forEach((element, index) => {
+                // Réinitialiser l'animation
+                element.style.animation = 'none';
+                element.offsetHeight; // Trigger reflow
+
+                // Récupérer le délai personnalisé
+                const delay = element.style.getPropertyValue('--delay') || '0s';
+
+                // Réappliquer l'animation
+                element.style.animation = `
+                translateXAnimation 1s ease-out forwards,
+                fadeInAnimation 1s ease-out forwards
+            `;
+                element.style.animationDelay = delay;
+            });
+        }
+
+        // Ajouter des écouteurs d'événements pour Reveal.js
+        Reveal.addEventListener('slidechanged', function(event) {
+            // Réinitialiser les animations quand on change de slide
+            resetAnimations(event.currentSlide);
+        });
+
+        // Style d'animation à ajouter dynamiquement
+        const animationStyle = document.createElement('style');
+        animationStyle.textContent = `
+        @keyframes translateXAnimation {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .fade {
+            opacity: 0;
+            will-change: transform, opacity;
+        }
+    `;
+        document.head.appendChild(animationStyle);
+
+        // Initialiser les animations de la première slide
+        if (Reveal.getCurrentSlide()) {
+            resetAnimations(Reveal.getCurrentSlide());
+        }
 
     </script>
 </body>
