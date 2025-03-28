@@ -296,7 +296,10 @@
         }
 
         /*sectionChambre*/
-
+        #sectionChambre .dialogue1{
+            left: 330px;
+            top: 250px;
+        }
         #sectionChambre .fenetre {
             width: 500px;
             top: -150px !important;
@@ -356,6 +359,21 @@
         }
 
         /*SECTION FEE*/
+        #sectionFees .dialogue1{
+            top:100px;
+            left: 610px;
+            z-index: 10;
+        }
+        #sectionFees .dialogue2{
+            top:0;
+            left: 100px;
+            z-index: 10;
+        }
+        #sectionFees .dialogue3{
+            top:100px;
+            left: 1030px;
+            z-index: 10;
+        }
         #sectionFees .fondFeuille{
             height: 450px;
             width: 1320px;
@@ -1017,6 +1035,10 @@
         }
 
         /*sectionChambre5*/
+        #sectionChambre5 .dialogue1 {
+            top:260px;
+            left: 320px;
+        }
 
         #sectionChambre5 .fenetre {
             width: 500px;
@@ -1287,6 +1309,11 @@
 
         /*sectionMaison7*/
 
+        #sectionMaison7 .dialogue1 {
+            top:220px;
+            left: 450px;
+        }
+
         #sectionMaison7 .maison {
             height: 250px;
             z-index: 10;
@@ -1340,7 +1367,16 @@
         }
 
         /*sectionEcole4*/
-
+        #sectionEcole4 .dialogue1{
+            top:300px;
+            left:280px;
+            z-index: 10;
+        }
+        #sectionEcole4 .dialogue2{
+            top:380px;
+            left:400px;
+            z-index: 10;
+        }
         #sectionEcole4 .ecoleSol {
             width: 100%;
         }
@@ -1405,12 +1441,18 @@
         Pour chaque image mettre un data-depth
         Pour css mettre le nom de la div puis la class de l'image avec un commentaire avant
     --->
+    <div style="position: absolute; top: 820px; left: 1280px; width: 100%; height: 100%; color: white; z-index: 100; font-family: 'Arial'; font-size: 14px;">
+        <span>ECHAP pour une vue d'ensemble</span>
+    </div>
     <div class="reveal">
         <div class="slides">
             <section data-background-color="lightblue" id="titre" data-transition="fade-in slide-in">
                 <span class="titre">
                     Les métamorphoses de Lila
                 </span>
+                <div style="position: absolute; top: 650px; left: 0; width: 100%; height: 100%; color: black; font-family: 'Arial'; font-size: 20px; text-align: center;">
+                    <span>SAE402 | Julie COULANDREAU, Houda EDDAOUDI, Mathilde PERIES, Elouan BRUZEK</span>
+                </div>
             </section>
             <section data-background-color="white" id="sectionMaison" data-transition="fade-in slide-in">
                 <!--Contexte-->
@@ -1534,9 +1576,15 @@
                 </div>
             </section>
             <section data-background-color="white" id="sectionChambre" data-transition="fade-in slide-in"> <!--cornflowerblue pour la couleur bleu-->
+                <!--Contexte-->
                 <div class="fade parallax contexte" style="--delay: 0.8s;">
                     <img src="image/j1/contexte/j1_contexte3_1.png" alt="j1">
                 </div>
+                <!--Dialogue-->
+                <div class="fade parallax dialogue dialogue1" style="--delay: 0.8s;">
+                    <img src="image/j1/dialogue/reve/j1_dialogue6.png" alt="j1">
+                </div>
+                <!--Image-->
                 <div class="fade parallax" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_chambre/sol.svg" alt="sol"
                          class="sol">
@@ -1571,9 +1619,21 @@
                 </div>
             </section>
             <section data-background-color="lightblue" id="sectionFees" data-transition="fade-in slide-in">
+                <!--Contexte-->
                 <div class="fade parallax contexte" style="--delay: 0.8s;">
                     <img src="image/j1/contexte/j1_contexte4_1.png" alt="j1">
                 </div>
+                <!--Dialogue-->
+                <div class="fade parallax dialogue dialogue1" style="--delay: 0.8s;">
+                    <img src="image/j1/dialogue/reve/j1_dialogue7.png" alt="j1">
+                </div>
+                <div class="fade parallax dialogue dialogue2" style="--delay: 0.8s;">
+                    <img src="image/j1/dialogue/reve/j1_dialogue8.png" alt="j1">
+                </div>
+                <div class="fade parallax dialogue dialogue3" style="--delay: 0.8s;">
+                    <img src="image/j1/dialogue/reve/j1_dialogue9.png" alt="j1">
+                </div>
+                <!--Image-->
                 <div class="fade parallax fondFeuille" style="--delay: 0.3s;">
                     <img data-depth="-0.04" src="image/decor_fee/decor/fond_feuille.svg" alt="fond feuille">
                 </div>
@@ -1606,11 +1666,12 @@
                 </div>
             </section>
             <section data-background-color="white" id="sectionChambre2" data-transition="fade-in slide-in"> <!--cornflowerblue pour la couleur bleu-->
-
+                <!--Contexte--->
                 <div class="fade parallax" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_chambre/sol.svg" alt="sol"
                          class="sol">
                 </div>
+                <!--Image--->
                 <div class="fade parallax" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_chambre/fenetre.svg" alt="fenetre"
                          class="fenetre">
@@ -1712,6 +1773,7 @@
                          class="nuage2">
                 </div>
             </section>
+
             <section data-background-color="white" id="sectionMaison4" data-transition="fade-in slide-in">
 
                 <div class="fade parallax" style="--delay: 0s;">
@@ -1962,9 +2024,15 @@
                 </div>
             </section>
             <section data-background-color="white" id="sectionChambre5" data-transition="fade-in slide-in"> <!--cornflowerblue pour la couleur bleu-->
+                <!---Contexte---->
                 <div class="fade parallax contexte" style="--delay: 0.8s;">
                     <img src="image/j3/contexte/j3_contexte4.png" alt="j1">
                 </div>
+                <!---Dialogue---->
+                <div class="fade parallax dialogue dialogue1" style="--delay: 0.8s;">
+                    <img src="image/j4/dialogue/ecole/j4_dialogue2.png" alt="j1">
+                </div>
+                <!---Image---->
                 <div class="fade parallax" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_chambre/sol.svg" alt="sol"
                          class="sol">
@@ -2108,9 +2176,15 @@
                 </div>
             </section>
             <section data-background-color="lightblue" id="sectionMaison7" data-transition="fade-in slide-in">
+                <!--Contexte-->
                 <div class="fade parallax contexte" style="--delay: 0.8s;">
                     <img src="image/j4/contexte/j4_contexte2_1.png" alt="j1">
                 </div>
+                <!---Dialogue-->
+                <div class="fade parallax dialogue dialogue1" style="--delay: 0.8s;">
+                    <img src="image/j4/dialogue/avant_ecole/j4_dialogue1.png" alt="j1">
+                </div>
+                <!---Image---->
                 <div class="fade parallax contexte" style="--delay: 0.8s;">
                     <img src="image/j4/contexte/j4_contexte1_1.png" alt="j1">
                 </div>
@@ -2143,9 +2217,18 @@
                 </div>
             </section>
             <section data-background-color="lightblue" id="sectionEcole4" data-transition="fade-in slide-in">
+                <!--Contexte-->
                 <div class="fade parallax contexte" style="--delay: 0.8s;">
                     <img src="image/j4/contexte/j4_contexte3_1.png" alt="j1">
                 </div>
+                <!--Dialogue-->
+                <div class="fade parallax dialogue dialogue1" style="--delay: 0.8s;">
+                    <img src="image/j4/dialogue/ecole/j4_dialogue4.png" alt="j1">
+                </div>
+                <div class="fade parallax dialogue dialogue2" style="--delay: 0.8s;">
+                    <img src="image/j4/dialogue/ecole/j4_dialogue3.png" alt="j1">
+                </div>
+                <!--Image-->
                 <div class="fade parallax" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_ecole/decor/ecole_sol.svg" alt="Ecole sol"
                          class="ecoleSol">
