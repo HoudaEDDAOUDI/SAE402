@@ -15,7 +15,9 @@
 
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="plugin/highlight/monokai.css">
-
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <style>
         /*CSS BASE*/
@@ -59,12 +61,13 @@
         }
         .titre {
             font-size: 50px;
-            font-weight: bold;
+            font-weight: 500;
             color: black;
             text-transform: uppercase;
             position: absolute;
             top: 50%;
             left: 50%;
+            font-family: "Winky Sans", sans-serif;
             transform: translate(-50%, -50%);
         }
 
@@ -84,7 +87,7 @@
             left: 250px;
             top: 600px;
             object-fit: contain;
-            z-index: 20;
+            z-index: 600;
         }
         .contexte img{
             height: auto;
@@ -95,6 +98,14 @@
             width: 180px;
             z-index: 50;
             object-fit: contain;
+        }
+        #moral{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            font-size: 21pt;
+            font-family: "Winky Sans", sans-serif;
+            align-content: center;
         }
 
 
@@ -303,7 +314,7 @@
         #sectionChambre .sac{
             top:120px;
             left: 650px;
-            width: 200px;
+            width: 120px;
             filter: grayscale(100%);
             z-index: 100;
         }
@@ -451,7 +462,7 @@
         #sectionChambre2 .sac{
             top:120px;
             left: 650px;
-            width: 200px;
+            width: 120px;
             filter: grayscale(80%);
             z-index: 100;
         }
@@ -576,14 +587,14 @@
         }
 
         #sectionEcole2 .dialogue2 {
-            left: 190px;
-            top: 260px;
+            left: 310px;
+            top: 240px;
             z-index: 999;
         }
 
         #sectionEcole2 .dialogue3 {
-            left: 300px;
-            top: 300px;
+            left: 460px;
+            top: 320px;
             z-index: 999;
         }
 
@@ -711,7 +722,7 @@
         #sectionChambre3 .sac{
             top:120px;
             left: 650px;
-            width: 200px;
+            width: 120px;
             filter: grayscale(80%);
             z-index: 100;
         }
@@ -1027,7 +1038,7 @@
         #sectionChambre4 .sac{
             top:120px;
             left: 650px;
-            width: 200px;
+            width: 120px;
             filter: grayscale(60%);
             z-index: 100;
         }
@@ -1280,7 +1291,7 @@
         #sectionChambre5 .sac{
             top:120px;
             left: 650px;
-            width: 200px;
+            width: 120px;
             filter: grayscale(60%);
             z-index: 100;
         }
@@ -1382,6 +1393,7 @@
             width: 650px;
             height: auto;
             left: 300px;
+            z-index: 50;
         }
 
         #sectionChateau .chemin{
@@ -1430,6 +1442,7 @@
             width: 650px;
             height: auto;
             left: 300px;
+            z-index: 50;
         }
 
         #sectionChateauJeu .chemin{
@@ -1484,6 +1497,7 @@
             width: 650px;
             height: auto;
             left: 300px;
+            z-index: 50;
         }
 
         #sectionChateauGagner .chemin{
@@ -1526,7 +1540,7 @@
         #sectionChambre6 .sac{
             top:120px;
             left: 650px;
-            width: 200px;
+            width: 120px;
             z-index: 100;
         }
 
@@ -1744,17 +1758,17 @@
                 <div class="fade parallax" style="--delay: 1.6s;">
                     <img data-depth="-0.08" src="image/decor_maison/nuage/nuage1.svg" alt="nuage 1" class="nuage1">
                 </div>
-                <div class="fade parallax" style="--delay: 1.9s;">
-                    <img data-depth="0.07" src="image/decor_maison/nuage/nuage2.svg" alt="nuage 2" class="nuage2">
+                <div class="fade parallax" style="--delay: 1.5s;">
+                    <img data-depth="-0.03" src="image/decor_maison/nuage/nuage2.svg" alt="nuage 2" class="nuage2">
                 </div>
-                <div class="fade parallax" style="--delay: 2.2s;">
-                    <img data-depth="0.07" src="image/decor_maison/arbre/arbre1.svg" alt="arbre 1" class="arbre1">
+                <div class="fade parallax" style="--delay: 1.4s;">
+                    <img data-depth="-0.06" src="image/decor_maison/arbre/arbre1.svg" alt="arbre 1" class="arbre1">
                 </div>
-                <div class="fade parallax" style="--delay: 2.5s;">
-                    <img data-depth="0.07" src="image/decor_base/soleil/soleil1.svg" alt="soleil" class="soleil">
+                <div class="fade parallax" style="--delay: 1.2s;">
+                    <img data-depth="0.04" src="image/decor_base/soleil/soleil1.svg" alt="soleil" class="soleil">
                 </div>
-                <div class="fade parallax" style="--delay: 2.2s;">
-                    <img data-depth="0.07" src="image/fille/profil_sac/profil_sac1.svg" alt="fille" class="fille">
+                <div class="fade parallax" style="--delay: 1.1s;">
+                    <img data-depth="0.01" src="image/fille/profil_sac/profil_sac1.svg" alt="fille" class="fille">
                 </div>
             </section>
             <section data-background-color="white" id="sectionEcole" data-transition="fade-in slide-in">
@@ -1777,7 +1791,7 @@
                     <img data-depth="0.04" src="image/decor_ecole/decor/ecole_sol.svg" alt="Ecole sol"
                          class="ecoleSol">
                 </div>
-                <div class="fade parallax" style="--delay: 2.5s;">
+                <div class="fade parallax" style="--delay: 1.2s;">
                     <img data-depth="-0.02" src="image/decor_ecole/enfant/balancoire.svg" alt="balançoire"
                          class="balancoire">
                 </div>
@@ -1785,27 +1799,27 @@
                     <img data-depth="0.08" src="image/decor_ecole/enfant/enfant1.svg" alt="enfant"
                          class="enfant">
                 </div>
-                <div class="fade parallax" style="--delay: 0.8s;">
-                    <img data-depth="0.05" src="image/decor_ecole/enfant/harceleur.svg" alt="harceleur1"
+                <div class="fade parallax" style="--delay: 1.1s;">
+                    <img data-depth="-0.05" src="image/decor_ecole/enfant/harceleur.svg" alt="harceleur1"
                          class="harceleur">
                 </div>
-                <div class="fade parallax" style="--delay: 0.8s;">
-                    <img data-depth="0.07" src="image/decor_ecole/enfant/harceleur2.svg" alt="harceleur2"
+                <div class="fade parallax" style="--delay: 1.4s;">
+                    <img data-depth="0.06" src="image/decor_ecole/enfant/harceleur2.svg" alt="harceleur2"
                          class="harceleur2">
                 </div>
-                <div class="fade parallax" style="--delay: 0.8s;">
-                    <img data-depth="-0.02" src="image/decor_base/soleil/soleil1.svg" alt="soleil"
+                <div class="fade parallax" style="--delay: 1.6s;">
+                    <img data-depth="0.02" src="image/decor_base/soleil/soleil1.svg" alt="soleil"
                          class="soleil">
                 </div>
-                <div class="fade parallax" style="--delay: 0.8s;">
-                    <img data-depth="-0.02" src="image/fille/profil/profil2.svg" alt="fille"
+                <div class="fade parallax" style="--delay: 1.5s;">
+                    <img data-depth="0.04" src="image/fille/profil/profil2.svg" alt="fille"
                          class="fille">
                 </div>
-                <div class="fade parallax" style="--delay: 0.8s;">
+                <div class="fade parallax" style="--delay: 0.9s;">
                     <img data-depth="-0.02" src="image/decor_maison/nuage/nuage1.svg" alt="nuage1"
                          class="nuage1">
                 </div>
-                <div class="fade parallax" style="--delay: 0.8s;">
+                <div class="fade parallax" style="--delay: 1.0s;">
                     <img data-depth="-0.05" src="image/decor_maison/nuage/nuage2.svg" alt="nuage2"
                          class="nuage2">
                 </div>
@@ -1945,7 +1959,7 @@
                     <img data-depth="-0.01" src="image/fille/sac/sac2.svg" alt="sol">
                 </div>
                 <div class="fade parallax" style="--delay: 0s;">
-                    <img data-depth="0.04" src="image/decor_chambre/fenetre.svg" alt="fenetre"
+                    <img data-depth="0.04" src="image/decor_chambre/fenetre_jour.svg" alt="fenetre"
                          class="fenetre">
                 </div>
                 <div class="fade parallax" style="--delay: 0.8s;">
@@ -2016,13 +2030,13 @@
                     <img src="image/j2/contexte/j2_contexte2.png" alt="j1">
                 </div>
                 <!--Dialogue-->
-                <div class="fade parallax dialogue dialogue1" style="--delay: 0.8s;">
+                <div class="fade parallax dialogue dialogue1" style="--delay: 0.9s;">
                     <img src="image/j2/dialogue/ecole/j2_dialogue2.png" alt="j2">
                 </div>
                 <div class="fade parallax dialogue dialogue2" style="--delay: 0.8s;">
                     <img src="image/j2/dialogue/ecole/j2_dialogue3.png" alt="j2">
                 </div>
-                <div class="fade parallax dialogue dialogue3" style="--delay: 0.8s;">
+                <div class="fade parallax dialogue dialogue3" style="--delay: 1s;">
                     <img src="image/j2/dialogue/ecole/j2_dialogue4.png" alt="j2">
                 </div>
                 <!--Image-->
@@ -2030,35 +2044,35 @@
                     <img data-depth="0.04" src="image/decor_ecole/decor/ecole_sol.svg" alt="Ecole sol"
                          class="ecoleSol">
                 </div>
-                <div class="fade parallax" style="--delay: 2.5s;">
+                <div class="fade parallax" style="--delay: 1.5s;">
                     <img data-depth="-0.02" src="image/decor_ecole/enfant/balancoire.svg" alt="balançoire"
                          class="balancoire">
                 </div>
-                <div class="fade parallax" style="--delay: 0.8s;">
-                    <img data-depth="0.08" src="image/decor_ecole/enfant/enfant1.svg" alt="enfant"
+                <div class="fade parallax" style="--delay: 1.7s;">
+                    <img data-depth="-0.08" src="image/decor_ecole/enfant/enfant1.svg" alt="enfant"
                          class="enfant">
                 </div>
-                <div class="fade parallax" style="--delay: 0.8s;">
+                <div class="fade parallax" style="--delay: 1.8s;">
                     <img data-depth="0.05" src="image/decor_ecole/enfant/harceleur.svg" alt="harceleur1"
                          class="harceleur">
                 </div>
-                <div class="fade parallax" style="--delay: 0.8s;">
-                    <img data-depth="0.07" src="image/decor_ecole/enfant/harceleur2.svg" alt="harceleur2"
+                <div class="fade parallax" style="--delay: 1.2s;">
+                    <img data-depth="-0.03" src="image/decor_ecole/enfant/harceleur2.svg" alt="harceleur2"
                          class="harceleur2">
                 </div>
-                <div class="fade parallax" style="--delay: 0.8s;">
+                <div class="fade parallax" style="--delay: 1.4s;">
                     <img data-depth="-0.02" src="image/decor_base/soleil/soleil2.svg" alt="soleil"
                          class="soleil">
                 </div>
-                <div class="fade parallax" style="--delay: 0.8s;">
+                <div class="fade parallax" style="--delay: 1.6s;">
                     <img data-depth="-0.02" src="image/fille/profil/profil2.svg" alt="fille"
                          class="fille">
                 </div>
-                <div class="fade parallax" style="--delay: 0.8s;">
+                <div class="fade parallax" style="--delay: 1s;">
                     <img data-depth="-0.02" src="image/decor_maison/nuage/nuage1.svg" alt="nuage1"
                          class="nuage1">
                 </div>
-                <div class="fade parallax" style="--delay: 0.8s;">
+                <div class="fade parallax" style="--delay: 1.1s;">
                     <img data-depth="-0.05" src="image/decor_maison/nuage/nuage2.svg" alt="nuage2"
                          class="nuage2">
                 </div>
@@ -2130,7 +2144,7 @@
                          class="lit">
                 </div>
                 <div class="fade parallax" style="--delay: 2.2s;">
-                    <img data-depth="0.04" src="image/decor_chambre/meuble.svg" alt="meuble"
+                    <img data-depth="-0.05" src="image/decor_chambre/meuble.svg" alt="meuble"
                          class="meuble">
                 </div>
                 <div class="fade parallax" style="--delay: 2.5s;">
@@ -2154,6 +2168,9 @@
                     <img src="image/j2/dialogue/reve/j2_dialogue8.png" alt="j1">
                 </div>
                 <!--Image--->
+                <div class="fade parallax lilaSirene" style="--delay: 1.9s;">
+                    <img data-depth="0.02" src="image/decor_mer/personnages/lila_sirene.svg" alt="lila sirene">
+                </div>
                 <div class="fade parallax item1" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_mer/decor_mer/eau_caillou.svg" alt="eau" class="eau">
                 </div>
@@ -2164,48 +2181,45 @@
                     <img data-depth="0.05" src="image/decor_mer/decor_mer/sable_gauche.svg" alt="sable">
                 </div>
                 <div class="fade parallax algue1" style="--delay: 1.8s;">
-                    <img data-depth="0.07" src="image/decor_mer/algues/algue1.svg" alt="algue">
+                    <img data-depth="-0.07" src="image/decor_mer/algues/algue1.svg" alt="algue">
                 </div>
                 <div class="fade parallax algue2" style="--delay: 1.9s;">
                     <img data-depth="-0.04" src="image/decor_mer/algues/algue2.svg" alt="algue">
                 </div>
-                <div class="fade parallax coquillage" style="--delay: 1.9s;">
-                    <img data-depth="0.03" src="image/decor_mer/algues/coquillage.svg" alt="coquillage">
+                <div class="fade parallax coquillage" style="--delay: 1.3s;">
+                    <img data-depth="-0.04" src="image/decor_mer/algues/coquillage.svg" alt="coquillage">
                 </div>
-                <div class="fade parallax crabe" style="--delay: 1.9s;">
+                <div class="fade parallax crabe" style="--delay: 1.4s;">
                     <img data-depth="-0.05" src="image/decor_mer/animaux/crabe.svg" alt="crabe">
                 </div>
-                <div class="fade parallax hyppocampe" style="--delay: 1.9s;">
+                <div class="fade parallax hyppocampe" style="--delay: 1.6s;">
                     <img data-depth="0.05" src="image/decor_mer/animaux/hyppocampe.svg" alt="hyppocampe">
                 </div>
-                <div class="fade parallax poisson" style="--delay: 1.9s;">
-                    <img data-depth="-0.02" src="image/decor_mer/animaux/poissons.svg" alt="poisson">
+                <div class="fade parallax poisson" style="--delay: 1.5s;">
+                    <img data-depth="-0.04" src="image/decor_mer/animaux/poissons.svg" alt="poisson">
                 </div>
-                <div class="fade parallax lilaSirene" style="--delay: 1.9s;">
-                    <img data-depth="0.02" src="image/decor_mer/personnages/lila_sirene.svg" alt="lila sirene">
-                </div>
-                <div class="fade parallax sarahSirene" style="--delay: 1.9s;">
+                <div class="fade parallax sarahSirene" style="--delay: 1.2s;">
                     <img data-depth="-0.03" src="image/decor_mer/personnages/sirene_fille.svg" alt="sarah sirene">
                 </div>
-                <div class="fade parallax garsSirene" style="--delay: 1.9s;">
-                    <img data-depth="0.01" src="image/decor_mer/personnages/sirene_gars.svg" alt="gars sirene">
+                <div class="fade parallax garsSirene" style="--delay: 1.7s;">
+                    <img data-depth="0.02" src="image/decor_mer/personnages/sirene_gars.svg" alt="gars sirene">
                 </div>
             </section>
             <section data-background-color="cornflowerblue" id="sectionSireneJeu" data-transition="fade-in slide-in" class="sceneSirene">
 
-                <div style="position: absolute; z-index: 500 ; left: 100px; top: 300px; width: 100px;">
+                <div style="position: absolute; z-index: 500 ; left: 100px; top: 300px; width: 100px; cursor: pointer;">
                     <img data-depth="0.04" src="image/decor_mer/piece1.png" alt="piece1" class="piece1">
                 </div>
 
-                <div style="position: absolute; z-index: 500 ; left: 500px; top: 150px; width: 100px;">
+                <div style="position: absolute; z-index: 500 ; left: 500px; top: 150px; width: 100px; cursor: pointer;">
                     <img data-depth="0.04" src="image/decor_mer/piece2.png" alt="piece2" class="piece2">
                 </div>
 
-                <div style="position: absolute; z-index: 500 ; left: 700px; top: 250px; width: 100px;">
+                <div style="position: absolute; z-index: 500 ; left: 700px; top: 250px; width: 100px; cursor: pointer;">
                     <img data-depth="0.04" src="image/decor_mer/piece3.png" alt="piece3" class="piece3">
                 </div>
 
-                <div style="position: absolute; z-index: 500 ; left: 1000px; top: 400px; width: 100px;">
+                <div style="position: absolute; z-index: 500 ; left: 1000px; top: 400px; width: 100px; cursor: pointer;">
                     <img data-depth="0.04" src="image/decor_mer/piece4.png" alt="piece4" class="piece4">
                 </div>
 
@@ -2221,31 +2235,31 @@
                 <div class="fade parallax sableGauche" style="--delay: 1.5s;">
                     <img data-depth="0.05" src="image/decor_mer/decor_mer/sable_gauche.svg" alt="sable">
                 </div>
-                <div class="fade parallax algue1" style="--delay: 1.8s;">
-                    <img data-depth="0.07" src="image/decor_mer/algues/algue1.svg" alt="algue">
+                <div class="fade parallax algue1" style="--delay: 1.3s;">
+                    <img data-depth="-0.07" src="image/decor_mer/algues/algue1.svg" alt="algue">
                 </div>
-                <div class="fade parallax algue2" style="--delay: 1.9s;">
+                <div class="fade parallax algue2" style="--delay: 1.6s;">
                     <img data-depth="-0.04" src="image/decor_mer/algues/algue2.svg" alt="algue">
                 </div>
-                <div class="fade parallax coquillage" style="--delay: 1.9s;">
-                    <img data-depth="0.03" src="image/decor_mer/algues/coquillage.svg" alt="coquillage">
+                <div class="fade parallax coquillage" style="--delay: 1.2s;">
+                    <img data-depth="-0.05" src="image/decor_mer/algues/coquillage.svg" alt="coquillage">
                 </div>
-                <div class="fade parallax crabe" style="--delay: 1.9s;">
+                <div class="fade parallax crabe" style="--delay: 1.4s;">
                     <img data-depth="-0.05" src="image/decor_mer/animaux/crabe.svg" alt="crabe">
                 </div>
-                <div class="fade parallax hyppocampe" style="--delay: 1.9s;">
+                <div class="fade parallax hyppocampe" style="--delay: 1.7s;">
                     <img data-depth="0.05" src="image/decor_mer/animaux/hyppocampe.svg" alt="hyppocampe">
                 </div>
-                <div class="fade parallax poisson" style="--delay: 1.9s;">
+                <div class="fade parallax poisson" style="--delay: 1.3s;">
                     <img data-depth="-0.02" src="image/decor_mer/animaux/poissons.svg" alt="poisson">
                 </div>
-                <div class="fade parallax lilaSirene" style="--delay: 1.9s;">
+                <div class="fade parallax lilaSirene" style="--delay: 1.6s;">
                     <img data-depth="0.02" src="image/decor_mer/personnages/lila_sirene.svg" alt="lila sirene">
                 </div>
-                <div class="fade parallax sarahSirene" style="--delay: 1.9s;">
+                <div class="fade parallax sarahSirene" style="--delay: 1.8s;">
                     <img data-depth="-0.03" src="image/decor_mer/personnages/sirene_fille.svg" alt="sarah sirene">
                 </div>
-                <div class="fade parallax garsSirene" style="--delay: 1.9s;">
+                <div class="fade parallax garsSirene" style="--delay: 1.4s;">
                     <img data-depth="0.01" src="image/decor_mer/personnages/sirene_gars.svg" alt="gars sirene">
                 </div>
             </section>
@@ -2259,34 +2273,34 @@
                 <div class="fade parallax sableDroite" style="--delay: 1s;">
                     <img data-depth="-0.07" src="image/decor_mer/decor_mer/sable_droite.svg" alt="sable">
                 </div>
-                <div class="fade parallax sableGauche" style="--delay: 1.5s;">
+                <div class="fade parallax sableGauche" style="--delay: 1.2s;">
                     <img data-depth="0.05" src="image/decor_mer/decor_mer/sable_gauche.svg" alt="sable">
                 </div>
-                <div class="fade parallax algue1" style="--delay: 1.8s;">
-                    <img data-depth="0.07" src="image/decor_mer/algues/algue1.svg" alt="algue">
+                <div class="fade parallax algue1" style="--delay: 1.1s;">
+                    <img data-depth="-0.07" src="image/decor_mer/algues/algue1.svg" alt="algue">
                 </div>
-                <div class="fade parallax algue2" style="--delay: 1.9s;">
+                <div class="fade parallax algue2" style="--delay: 1.4s;">
                     <img data-depth="-0.04" src="image/decor_mer/algues/algue2.svg" alt="algue">
                 </div>
-                <div class="fade parallax coquillage" style="--delay: 1.9s;">
-                    <img data-depth="0.03" src="image/decor_mer/algues/coquillage.svg" alt="coquillage">
+                <div class="fade parallax coquillage" style="--delay: 1.6s;">
+                    <img data-depth="-0.03" src="image/decor_mer/algues/coquillage.svg" alt="coquillage">
                 </div>
-                <div class="fade parallax crabe" style="--delay: 1.9s;">
+                <div class="fade parallax crabe" style="--delay: 1.5s;">
                     <img data-depth="-0.05" src="image/decor_mer/animaux/crabe.svg" alt="crabe">
                 </div>
-                <div class="fade parallax hyppocampe" style="--delay: 1.9s;">
+                <div class="fade parallax hyppocampe" style="--delay: 1.8s;">
                     <img data-depth="0.05" src="image/decor_mer/animaux/hyppocampe.svg" alt="hyppocampe">
                 </div>
-                <div class="fade parallax poisson" style="--delay: 1.9s;">
+                <div class="fade parallax poisson" style="--delay: 1.7s;">
                     <img data-depth="-0.02" src="image/decor_mer/animaux/poissons.svg" alt="poisson">
                 </div>
-                <div class="fade parallax lilaSirene" style="--delay: 1.9s;">
+                <div class="fade parallax lilaSirene" style="--delay: 1.3s;">
                     <img data-depth="0.02" src="image/decor_mer/personnages/lila_sirene.svg" alt="lila sirene">
                 </div>
-                <div class="fade parallax sarahSirene" style="--delay: 1.9s;">
+                <div class="fade parallax sarahSirene" style="--delay: 1.4s;">
                     <img data-depth="-0.03" src="image/decor_mer/personnages/sirene_fille.svg" alt="sarah sirene">
                 </div>
-                <div class="fade parallax garsSirene" style="--delay: 1.9s;">
+                <div class="fade parallax garsSirene" style="--delay: 1.6s;">
                     <img data-depth="0.01" src="image/decor_mer/personnages/sirene_gars.svg" alt="gars sirene">
                 </div>
             </section>
@@ -2308,7 +2322,7 @@
                          class="sol">
                 </div>
                 <div class="fade parallax" style="--delay: 0s;">
-                    <img data-depth="0.04" src="image/decor_chambre/fenetre.svg" alt="fenetre"
+                    <img data-depth="0.04" src="image/decor_chambre/fenetre_jour.svg" alt="fenetre"
                          class="fenetre">
                 </div>
                 <div class="fade parallax" style="--delay: 0.8s;">
@@ -2328,7 +2342,7 @@
                          class="lit">
                 </div>
                 <div class="fade parallax" style="--delay: 2.2s;">
-                    <img data-depth="0.04" src="image/decor_chambre/meuble.svg" alt="meuble"
+                    <img data-depth="-0.02" src="image/decor_chambre/meuble.svg" alt="meuble"
                          class="meuble">
                 </div>
                 <div class="fade parallax" style="--delay: 2.5s;">
@@ -2381,7 +2395,7 @@
                     <img data-depth="0.04" src="image/decor_ecole/decor/ecole_sol.svg" alt="Ecole sol"
                          class="ecoleSol">
                 </div>
-                <div class="fade parallax" style="--delay: 2.5s;">
+                <div class="fade parallax" style="--delay: 1.5s;">
                     <img data-depth="-0.02" src="image/decor_ecole/enfant/balancoire.svg" alt="balançoire"
                          class="balancoire">
                 </div>
@@ -2389,27 +2403,27 @@
                     <img data-depth="0.08" src="image/decor_ecole/enfant/enfant1.svg" alt="enfant"
                          class="enfant">
                 </div>
-                <div class="fade parallax" style="--delay: 0.8s;">
+                <div class="fade parallax" style="--delay: 0.9s;">
                     <img data-depth="0.05" src="image/decor_ecole/enfant/harceleur.svg" alt="harceleur1"
                          class="harceleur">
                 </div>
-                <div class="fade parallax" style="--delay: 0.8s;">
+                <div class="fade parallax" style="--delay: 1.1s;">
                     <img data-depth="0.07" src="image/decor_ecole/enfant/harceleur2.svg" alt="harceleur2"
                          class="harceleur2">
                 </div>
-                <div class="fade parallax" style="--delay: 0.8s;">
-                    <img data-depth="-0.02" src="image/decor_base/soleil/soleil3.svg" alt="soleil"
+                <div class="fade parallax" style="--delay: 1.3s;">
+                    <img data-depth="-0.04" src="image/decor_base/soleil/soleil3.svg" alt="soleil"
                          class="soleil">
                 </div>
-                <div class="fade parallax" style="--delay: 0.8s;">
-                    <img data-depth="-0.02" src="image/fille/profil/profil3.svg" alt="fille"
+                <div class="fade parallax" style="--delay: 1.4s;">
+                    <img data-depth="0.02" src="image/fille/profil/profil3.svg" alt="fille"
                          class="fille">
                 </div>
-                <div class="fade parallax" style="--delay: 0.8s;">
-                    <img data-depth="-0.02" src="image/decor_maison/nuage/nuage1.svg" alt="nuage1"
+                <div class="fade parallax" style="--delay: 0.9s;">
+                    <img data-depth="0.06" src="image/decor_maison/nuage/nuage1.svg" alt="nuage1"
                          class="nuage1">
                 </div>
-                <div class="fade parallax" style="--delay: 0.8s;">
+                <div class="fade parallax" style="--delay: 1.6s;">
                     <img data-depth="-0.05" src="image/decor_maison/nuage/nuage2.svg" alt="nuage2"
                          class="nuage2">
                 </div>
@@ -2463,7 +2477,7 @@
                          class="sol">
                 </div>
                 <div class="fade parallax" style="--delay: 0s;">
-                    <img data-depth="0.04" src="image/decor_chambre/fenetre.svg" alt="fenetre"
+                    <img data-depth="-0.03" src="image/decor_chambre/fenetre.svg" alt="fenetre"
                          class="fenetre">
                 </div>
                 <div class="fade parallax" style="--delay: 0.8s;">
@@ -2483,7 +2497,7 @@
                          class="lit">
                 </div>
                 <div class="fade parallax" style="--delay: 2.2s;">
-                    <img data-depth="0.04" src="image/decor_chambre/meuble.svg" alt="meuble"
+                    <img data-depth="-0.03" src="image/decor_chambre/meuble.svg" alt="meuble"
                          class="meuble">
                 </div>
                 <div class="fade parallax" style="--delay: 2.5s;">
@@ -2504,10 +2518,10 @@
                 <div class="fade parallax solChateaux" style="--delay: 0.8s;">
                     <img data-depth="0.04" src="image/decor_chateau/sol.png" alt="sol partie châteaux">
                 </div>
-                <div class="fade parallax chateau" style="--delay: 0.6s;">
+                <div class="fade parallax chateau" style="--delay: 0.9s;">
                     <img data-depth="0.02" src="image/decor_chateau/chateau_1.png" alt="chateau" class="">
                 </div>
-                <div class="fade parallax dragon" style="--delay: 0.4s;">
+                <div class="fade parallax dragon" style="--delay: 1.3s;">
                     <img data-depth="-0.02" src="image/decor_chateau/dragon.svg" alt="dragon" class="">
                 </div>
                 <div class="fade parallax feuillage1" style="--delay: 1.2s;">
@@ -2524,17 +2538,19 @@
                 </div>
             </section>
             <section data-background-color="lightblue" id="sectionChateauJeu" data-transition="fade-in slide-in" class="sceneDragon">
+                <div class="fade parallax contexte" style="--delay: 0.8s;">
+                    <img src="image/j3/contexte/j3_contexte6.png" alt="j1">
+                </div>
                 <div class="fade parallax solChateaux" style="--delay: 0.8s;">
                     <img data-depth="0.04" src="image/decor_chateau/sol.png" alt="sol partie châteaux">
                 </div>
-
                 <div class="fade parallax chateau" style="--delay: 0.6s;">
                     <img data-depth="0.02" src="image/decor_chateau/chateau_1.png" alt="chateau" class="">
                 </div>
                 <div class="dragon dragonEffet" style="position: absolute; z-index: 500 ; left: 100px; top: 400px;">
                     <img data-depth="-0.02" src="image/decor_chateau/dragon.svg" alt="dragon">
                 </div>
-                <div class="buisson1" style="position: absolute; z-index: 500 ; left: 0px; top: 550px">
+                <div class="buissonClick" style="position: absolute; z-index: 500 ; left: 0px; top: 550px; cursor: pointer;" >
                     <img data-depth="0.03" src="image/decor_chateau/feuillage1.png" alt="feuillage1">
                 </div>
                 <div class="fade parallax feuillage2" style="--delay: 1.3s;">
@@ -2588,7 +2604,7 @@
                     <img data-depth="-0.01" src="image/fille/sac/sac4.svg" alt="sol">
                 </div>
                 <div class="fade parallax" style="--delay: 0s;">
-                    <img data-depth="0.04" src="image/decor_chambre/fenetre.svg" alt="fenetre"
+                    <img data-depth="0.04" src="image/decor_chambre/fenetre_jour.svg" alt="fenetre"
                          class="fenetre">
                 </div>
                 <div class="fade parallax" style="--delay: 0.8s;">
@@ -2608,7 +2624,7 @@
                          class="lit">
                 </div>
                 <div class="fade parallax" style="--delay: 2.2s;">
-                    <img data-depth="0.04" src="image/decor_chambre/meuble.svg" alt="meuble"
+                    <img data-depth="-0.03" src="image/decor_chambre/meuble.svg" alt="meuble"
                          class="meuble">
                 </div>
                 <div class="fade parallax" style="--delay: 2.5s;">
@@ -2707,6 +2723,9 @@
                          class="nuage2">
                 </div>
             </section>
+            <section data-background-color="lightblue" id="moral" data-transition="fade-in slide-in">
+                <p class="moral">Comme Lila, crois en tes rêves et ne laisse personne éteindre ta lumière.</p>
+            </section>
         </div>
     </div>
     <!--<script src="js/wow.min.js"></script>-->
@@ -2748,6 +2767,9 @@
 
         const ambianceAudio = {
             "sectionEcole" : "./audio/rire.mp3",
+            "sectionEcole2" : "./audio/rire.mp3",
+            "sectionEcole3" : "./audio/rire.mp3",
+            "sectionEcole4" : "./audio/rire.mp3",
             "sectionSirene" : "./audio/underwater.mp3",
             "sectionSireneJeu" : "./audio/underwater.mp3",
             "sectionSireneGagner" : "./audio/underwater.mp3",
@@ -2771,6 +2793,9 @@
             }
 
             if (slideId === "sectionEcole" ||
+                slideId === "sectionEcole2" ||
+                slideId === "sectionEcole3" ||
+                slideId === "sectionEcole4" ||
                 slideId === "sectionSirene" ||
                 slideId === "sectionSireneJeu" ||
                 slideId === "sectionSireneGagner" ||
@@ -2798,7 +2823,7 @@
         Reveal.initialize({
             hash: true,
             backgroundTransition: 'slide',
-            autoSlide: 5000,
+            autoSlide: 9000,
             loop: true,
 
             keyboard: {
@@ -2888,7 +2913,7 @@
         //JEU DRAGON---------------------------------------------
         document.addEventListener("DOMContentLoaded", function () {
             const dragon = document.querySelector('.dragonEffet');
-            const buisson = document.querySelector('.buisson1');
+            const buisson = document.querySelector('.buissonClick');
 
             if (!dragon || !buisson) return; // Vérifie si les éléments existent
 
