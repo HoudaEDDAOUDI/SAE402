@@ -80,6 +80,18 @@
             height: 100%;
         }
 
+        .contexte{
+            left: 250px;
+            top: 600px;
+            object-fit: contain;
+            z-index: 20;
+        }
+        .contexte img{
+            height: auto;
+            width: 800px;
+        }
+
+
         /*sectionMaison*/
 
         #sectionMaison .maison {
@@ -319,6 +331,65 @@
             filter: grayscale(100%);
         }
 
+        /*SECTION FEE*/
+        #sectionFees .fondFeuille{
+            height: 450px;
+            width: 1320px;
+            top: 300px;
+            left: -15px;
+        }
+
+        #sectionFees .arbre{
+            width: 2250px;
+            height: 735px;
+            left: -485px;
+            top: -24px;
+        }
+
+        #sectionFees .buisson1{
+            width: 450px;
+            top: 237px;
+            left: -15px;
+        }
+
+        #sectionFees .buisson2{
+            width: 400px;
+            top: 200px;
+            left: 890px ;
+        }
+
+        #sectionFees .papillon{
+            width: 60px;
+            left: 750px;
+            top: -50px;
+        }
+
+        #sectionFees .fee_bleue{
+            width: 80px;
+            left: 190px;
+        }
+
+        #sectionFees .fee_rose_lila{
+            width: 170px;
+            left: 500px;
+        }
+
+        #sectionFees .fee_verte{
+            width: 100px;
+            left: 900px;
+        }
+
+        #sectionFees .fee_violette{
+            width: 100px;
+            top: -130px;
+            left: 22px;
+        }
+
+        #sectionFees .fee_rouge{
+            width: 60px;
+            top: -80px;
+            left: 1200px;
+        }
         /*sectionChambre2*/
 
         #sectionChambre2 .fenetre {
@@ -1040,18 +1111,10 @@
             left: 685px;
         }
 
-        #sectionChateau .chevalier1{
-            height: 100px;
-            width: auto;
-            top: 576px;
-            left: 925px;
-        }
-
-        #sectionChateau .chevalier2{
-            height: 80px;
-            width: auto;
-            top: 530px;
-            left: 790px;
+        #sectionChateau .dragon{
+            width: 185px;
+            left: 60px;
+            top: 95px;
         }
 
         /*sectionChambre6*/
@@ -1252,6 +1315,9 @@
                 </span>
             </section>
             <section data-background-color="white" id="sectionMaison" data-transition="fade-in slide-in">
+                <div class="fade parallax contexte" style="--delay: 0.8s;">
+                    <img src="image/j1/contexte/j1_contexte1_1.png" alt="j1">
+                </div>
                 <div class="fade parallax" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_maison/colline/colline_droite.svg" alt="colline droite"
                         class="collineDroite">
@@ -1280,6 +1346,9 @@
                 </div>
             </section>
             <section data-background-color="white" id="sectionEcole" data-transition="fade-in slide-in">
+                <div class="fade parallax contexte" style="--delay: 0.8s;">
+                    <img src="image/j1/contexte/j1_contexte2_1.png" alt="j1">
+                </div>
                 <div class="fade parallax" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_ecole/decor/ecole_sol.svg" alt="Ecole sol"
                          class="ecoleSol">
@@ -1346,6 +1415,9 @@
                 </div>
             </section>
             <section data-background-color="white" id="sectionChambre" data-transition="fade-in slide-in"> <!--cornflowerblue pour la couleur bleu-->
+                <div class="fade parallax contexte" style="--delay: 0.8s;">
+                    <img src="image/j1/contexte/j1_contexte3_1.png" alt="j1">
+                </div>
                 <div class="fade parallax" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_chambre/sol.svg" alt="sol"
                          class="sol">
@@ -1379,9 +1451,39 @@
                          class="lampe2">
                 </div>
             </section>
-            <section data-background-color="white" id="sectionFee" data-transition="fade-in slide-in">
-                <div class="fade parallax" style="--delay: 0s;">
-                    DECOR FEE
+            <section data-background-color="lightblue" id="sectionFees" data-transition="fade-in slide-in">
+                <div class="fade parallax contexte" style="--delay: 0.8s;">
+                    <img src="image/j1/contexte/j1_contexte4_1.png" alt="j1">
+                </div>
+                <div class="fade parallax fondFeuille" style="--delay: 0.3s;">
+                    <img data-depth="-0.04" src="image/decor_fee/decor/fond_feuille.svg" alt="fond feuille">
+                </div>
+                <div class="fade parallax arbre" style="--delay: 0.5s;">
+                    <img data-depth="0.06" src="image/decor_fee/decor/arbre_1.svg" alt="arbre">
+                </div>
+                <div class="fade parallax buisson1" style="--delay: 0.6s;">
+                    <img data-depth="0.02" src="image/decor_fee/decor/buisson1_1.svg" alt="buisson">
+                </div>
+                <div class="fade parallax buisson2" style="--delay: 0.8s;">
+                    <img data-depth="-0.02" src="image/decor_fee/decor/buisson2.svg" alt="buisson">
+                </div>
+                <div class="fade parallax papillon" style="--delay: 0.4s;">
+                    <img data-depth="0.05" src="image/decor_fee/decor/papillon.svg" alt="papillon">
+                </div>
+                <div class="fade parallax fee_bleue" style="--delay: 0.8s;">
+                    <img data-depth="-0.05" src="image/decor_fee/fee/fee_bleue.svg" alt="fée bleue">
+                </div>
+                <div class="fade parallax fee_rose_lila" style="--delay: 0.9s;">
+                    <img data-depth="-0.01" src="image/decor_fee/fee/fee_rose_lila.svg" alt="fée rose lila">
+                </div>
+                <div class="fade parallax fee_verte" style="--delay: 0.4s;">
+                    <img data-depth="0.02" src="image/decor_fee/fee/fee_verte.svg" alt="fée verte">
+                </div>
+                <div class="fade parallax fee_violette" style="--delay: 0.6s;">
+                    <img data-depth="0.03" src="image/decor_fee/fee/fee_violette.svg" alt="fée violette">
+                </div>
+                <div class="fade parallax fee_rouge" style="--delay: 0.7s;">
+                    <img data-depth="-0.03" src="image/decor_fee/fee/fée_rouge.svg" alt="fée rouge">
                 </div>
             </section>
             <section data-background-color="cornflowerblue" id="sectionChambre2" data-transition="fade-in slide-in"> <!--cornflowerblue pour la couleur bleu-->
@@ -1747,29 +1849,26 @@
                 </div>
             </section>
             <section data-background-color="lightblue" id="sectionChateau" data-transition="fade-in slide-in">
-                <div class="fade parallax solChateaux" style="--delay: 1.9s;">
+                <div class="fade parallax solChateaux" style="--delay: 0.8s;">
                     <img data-depth="0.04" src="image/decor_chateau/sol.png" alt="sol partie châteaux">
                 </div>
-                <div class="fade parallax chateau" style="--delay: 1.9s;">
-                    <img data-depth="0.07" src="image/decor_chateau/chateau_1.png" alt="chateau" class="">
+                <div class="fade parallax chateau" style="--delay: 0.6s;">
+                    <img data-depth="0.02" src="image/decor_chateau/chateau_1.png" alt="chateau" class="">
                 </div>
-                <div class="fade parallax feuillage1" style="--delay: 1.9s;">
-                    <img data-depth="0.07" src="image/decor_chateau/feuillage1.png" alt="feuillage1">
+                <div class="fade parallax dragon" style="--delay: 0.4s;">
+                    <img data-depth="-0.02" src="image/decor_chateau/dragon.svg" alt="dragon" class="">
                 </div>
-                <div class="fade parallax feuillage2" style="--delay: 1.9s;">
-                    <img data-depth="0.07" src="image/decor_chateau/feuillage2.png" alt="feuillage2" class="">
+                <div class="fade parallax feuillage1" style="--delay: 1.2s;">
+                    <img data-depth="0.03" src="image/decor_chateau/feuillage1.png" alt="feuillage1">
                 </div>
-                <div class="fade parallax arbre1" style="--delay: 1.9s;">
-                    <img data-depth="0.07" src="image/decor_chateau/arbre_1.png" alt="arbre1" class="">
+                <div class="fade parallax feuillage2" style="--delay: 1.3s;">
+                    <img data-depth="-0.04" src="image/decor_chateau/feuillage2.png" alt="feuillage2" class="">
                 </div>
-                <div class="fade parallax chemin" style="--delay: 1.9s;">
-                    <img data-depth="0.07" src="image/decor_chateau/chemin_1.png" alt="chemin" class="">
+                <div class="fade parallax arbre1" style="--delay: 1.1s;">
+                    <img data-depth="0.05" src="image/decor_chateau/arbre_1.png" alt="arbre1" class="">
                 </div>
-                <div class="fade parallax chevalier1" style="--delay: 1.9s;">
-                    <img data-depth="0.07" src="image/decor_chateau/chevalier_2.png" alt="chevalier" class="">
-                </div>
-                <div class="fade parallax chevalier2" style="--delay: 1.9s;">
-                    <img data-depth="0.07" src="image/decor_chateau/chevalier_2.png" alt="chevalier" class="">
+                <div class="fade parallax chemin" style="--delay: 0.9s;">
+                    <img data-depth="-0.07" src="image/decor_chateau/chemin_1.png" alt="chemin" class="">
                 </div>
             </section>
             <section data-background-color="cornflowerblue" id="sectionChambre6" data-transition="fade-in slide-in"> <!--cornflowerblue pour la couleur bleu-->
@@ -1883,12 +1982,7 @@
     <script src="plugin/zoom/zoom.js"></script>
 
     <script>
-        // More info about initialization & config:
-        // - https://revealjs.com/initialization/
-        // - https://revealjs.com/config/
-
-        //new WOW().init();
-
+        //INITIALISATION----------------------------------------------
         Reveal.initialize({
             hash: true,
             backgroundTransition: 'slide',
@@ -1905,13 +1999,13 @@
             plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
         });
 
-        //PARALLAX
+        //PARALLAX----------------------------------------------
         document.querySelectorAll('.parallax').forEach(parallax => {
             var parallaxInstance = new Parallax(parallax, { relativeInput: true });
             parallaxInstance.friction(0.2, 0.2, 0.3);
         });
 
-        //SLIDE
+        //SLIDE----------------------------------------------
         function resetAnimations(slide) {
             // Sélectionner tous les éléments avec la classe 'fade'
             const fadeElements = slide.querySelectorAll('.fade');
@@ -1974,6 +2068,58 @@
             resetAnimations(Reveal.getCurrentSlide());
         }
 
+        // AUDIO -------------------------------------------
+        const slideAudio = {
+            "sectionMaison": "audio/page.mp3",
+            "sectionEcole": "audio/page.mp3",
+            "sectionMaison2": "audio/page.mp3",
+            "sectionChambre": "audio/page.mp3",
+            "sectionFees": "audio/page.mp3",
+            "sectionChateau": "audio/page.mp3",
+            "sectionSirene": "audio/page.mp3"
+        };
+
+        const ambianceAudio = {
+            "sectionEcole" : "audio/rire.mp3",
+            "sectionChambre" : "audio/respiration.mp3"
+        }
+
+        let audio = new Audio();
+        let ambianceAudioElement = new Audio();  // Éléments audio pour l'ambiance
+        let isAmbiancePlaying = false;
+
+        function playSlideAudio(event) {
+            let slide = event.currentSlide;
+            let slideId = slide.getAttribute("id");
+
+            // Vérifier et jouer l'audio principal pour chaque slide
+            if (slideId && slideAudio[slideId]) {
+                audio.src = slideAudio[slideId];
+                audio.play().catch(error => console.log("Erreur lors de la lecture de l'audio principal :", error));
+            }
+
+            // Gérer l'audio d'ambiance pour sectionMaison
+            if (slideId === "sectionMaison") {
+                if (!isAmbiancePlaying) { // Si l'audio d'ambiance n'est pas déjà joué
+                    ambianceAudioElement.src = ambianceAudio[slideId];
+                    ambianceAudioElement.play().catch(error => console.log("Erreur lors de la lecture de l'audio d'ambiance :", error));
+                    isAmbiancePlaying = true; // Marquer comme joué
+                }
+            } else {
+                // Si on quitte la slide sectionMaison, arrêter l'audio d'ambiance
+                if (isAmbiancePlaying) {
+                    ambianceAudioElement.pause(); // Stopper l'audio d'ambiance
+                    ambianceAudioElement.currentTime = 0; // Réinitialiser à 0 pour éviter la reprise depuis un endroit arbitraire
+                    isAmbiancePlaying = false; // Marquer comme arrêté
+                }
+            }
+        }
+
+        Reveal.initialize({
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+        });
+
+        Reveal.on('slidechanged', playSlideAudio);
     </script>
 </body>
 
