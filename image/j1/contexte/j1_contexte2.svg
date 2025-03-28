@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 999 94.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        font-family: Kopik-Regular, Kopik;
+        font-size: 20px;
+      }
+
+      .cls-4 {
+        letter-spacing: -.15em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-7 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-10 {
+        letter-spacing: 0em;
+      }
+
+      .cls-11 {
+        letter-spacing: .03em;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <polygon class="cls-1" points="1 1 985 11.12 916.31 55.92 998 93.5 21.42 84.83 97.54 41.47 1 1"/>
+    <text class="cls-3" transform="translate(259.38 41.34)"><tspan x="0" y="0">Il est 10h du mati</tspan><tspan class="cls-6" x="165.86" y="0">n</tspan><tspan x="177.42" y="0">, Lila est à </tspan><tspan class="cls-5" x="281.16" y="0">l</tspan><tspan class="cls-4" x="286.14" y="0">’</tspan><tspan x="290" y="0">écol</tspan><tspan class="cls-7" x="331.32" y="0">e</tspan><tspan x="342.26" y="0">. Elle est tris</tspan><tspan class="cls-10" x="463.24" y="0">t</tspan><tspan x="471.18" y="0">e </tspan><tspan class="cls-11" x="78.11" y="21">c</tspan><tspan x="89.63" y="21">ar les en</tspan><tspan class="cls-9" x="171.53" y="21">f</tspan><tspan x="178.99" y="21">ants se mo</tspan><tspan class="cls-8" x="286.37" y="21">q</tspan><tspan x="298.63" y="21">uent </tspan><tspan class="cls-5" x="348.25" y="21">d</tspan><tspan class="cls-4" x="360.55" y="21">’</tspan><tspan class="cls-2" x="364.41" y="21">ell</tspan><tspan class="cls-7" x="386.91" y="21">e</tspan><tspan x="397.85" y="21">.</tspan></text>
+  </g>
+</svg>

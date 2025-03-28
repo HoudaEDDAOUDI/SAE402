@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 999 94.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-4 {
+        font-family: Kopik-Regular, Kopik;
+        font-size: 20px;
+      }
+
+      .cls-5 {
+        letter-spacing: -.16em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-7 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-8 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-10 {
+        letter-spacing: 0em;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+
+      .cls-12 {
+        letter-spacing: -.01em;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <polygon class="cls-1" points="1 1 985 11.12 916.31 55.92 998 93.5 21.42 84.83 97.54 41.47 1 1"/>
+    <text class="cls-4" transform="translate(236.99 37.5)"><tspan x="0" y="0">Lila ado</tspan><tspan class="cls-8" x="77.04" y="0">r</tspan><tspan x="84.62" y="0">e </tspan><tspan class="cls-7" x="101.36" y="0">l</tspan><tspan class="cls-5" x="106.34" y="0">’</tspan><tspan x="110.2" y="0">école main</tspan><tspan class="cls-12" x="216.16" y="0">t</tspan><tspan x="224.1" y="0">enan</tspan><tspan class="cls-6" x="272.6" y="0">t</tspan><tspan x="280.24" y="0">. Elle igno</tspan><tspan class="cls-8" x="375.92" y="0">r</tspan><tspan x="383.5" y="0">e les mo</tspan><tspan class="cls-10" x="464.8" y="0">q</tspan><tspan class="cls-2" x="477.06" y="0">ueries </tspan><tspan class="cls-11" x="541.92" y="0">e</tspan><tspan x="553.56" y="0">t </tspan><tspan x="64.38" y="27">plo</tspan><tspan class="cls-11" x="95.44" y="27">ng</tspan><tspan x="119.34" y="27">e dans son im</tspan><tspan class="cls-11" x="254.18" y="27">a</tspan><tspan x="265.76" y="27">gination pour </tspan><tspan class="cls-9" x="402.08" y="27">s</tspan><tspan x="412.22" y="27">’amuse</tspan><tspan class="cls-3" x="483.96" y="27">r</tspan><tspan x="490.35" y="27">.</tspan></text>
+  </g>
+</svg>

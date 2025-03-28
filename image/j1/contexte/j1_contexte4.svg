@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 999 94.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        font-family: Kopik-Regular, Kopik;
+        font-size: 20px;
+      }
+
+      .cls-4 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <polygon class="cls-1" points="1 1 985 11.12 916.31 55.92 998 93.5 21.42 84.83 97.54 41.47 1 1"/>
+    <text class="cls-3" transform="translate(263.51 41.34)"><tspan x="0" y="0">Lila se </tspan><tspan class="cls-5" x="66.96" y="0">r</tspan><tspan class="cls-8" x="74.54" y="0">é</tspan><tspan class="cls-9" x="86.18" y="0">v</tspan><tspan class="cls-2" x="96.18" y="0">eille dans un monde im</tspan><tspan class="cls-7" x="320.54" y="0">a</tspan><tspan x="332.12" y="0">ginai</tspan><tspan class="cls-5" x="378.62" y="0">r</tspan><tspan class="cls-6" x="386.2" y="0">e</tspan><tspan x="397.14" y="0">. Elle se </tspan><tspan class="cls-5" x="72.38" y="27">r</tspan><tspan class="cls-8" x="79.96" y="27">e</tspan><tspan x="91.6" y="27">t</tspan><tspan class="cls-5" x="99.74" y="27">r</tspan><tspan x="107.32" y="27">ou</tspan><tspan class="cls-9" x="132.8" y="27">v</tspan><tspan x="142.8" y="27">e dans un vill</tspan><tspan class="cls-7" x="268.36" y="27">ag</tspan><tspan x="291.4" y="27">e </tspan><tspan class="cls-4" x="308.14" y="27">f</tspan><tspan x="315.3" y="27">ééri</tspan><tspan class="cls-8" x="352.11" y="27">q</tspan><tspan x="364.38" y="27">ue !</tspan></text>
+  </g>
+</svg>

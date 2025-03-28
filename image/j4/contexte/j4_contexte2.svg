@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 999 94.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-4 {
+        font-family: Kopik-Regular, Kopik;
+        font-size: 20px;
+      }
+
+      .cls-5 {
+        letter-spacing: -.16em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-7 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-8 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-10 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <polygon class="cls-1" points="1 1 985 11.12 916.31 55.92 998 93.5 21.42 84.83 97.54 41.47 1 1"/>
+    <text class="cls-4" transform="translate(224.69 42.5)"><tspan x="0" y="0">Lila est en </tspan><tspan class="cls-7" x="104.38" y="0">r</tspan><tspan x="111.96" y="0">ou</tspan><tspan class="cls-10" x="137.44" y="0">t</tspan><tspan x="145.38" y="0">e pour </tspan><tspan class="cls-7" x="212.98" y="0">l</tspan><tspan class="cls-5" x="217.96" y="0">’</tspan><tspan x="221.82" y="0">école ! Elle a </tspan><tspan class="cls-10" x="349.5" y="0">t</tspan><tspan x="357.44" y="0">ellement hâ</tspan><tspan class="cls-10" x="471.62" y="0">t</tspan><tspan x="479.56" y="0">e </tspan><tspan class="cls-7" x="496.3" y="0">d</tspan><tspan x="508.6" y="0">’y alle</tspan><tspan class="cls-3" x="564.94" y="0">r</tspan><tspan x="571.34" y="0">. </tspan><tspan class="cls-8" x="114.09" y="27">L</tspan><tspan x="125.75" y="27">e monde aussi de nou</tspan><tspan class="cls-9" x="339.45" y="27">v</tspan><tspan x="349.45" y="27">eau colo</tspan><tspan class="cls-6" x="432.92" y="27">r</tspan><tspan class="cls-2" x="440.5" y="27">é !</tspan></text>
+  </g>
+</svg>

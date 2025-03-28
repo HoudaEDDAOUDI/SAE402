@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 999 94.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        font-family: Kopik-Regular, Kopik;
+        font-size: 20px;
+      }
+
+      .cls-4 {
+        letter-spacing: -.16em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.04em;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <polygon class="cls-1" points="1 1 985 11.12 916.31 55.92 998 93.5 21.42 84.83 97.54 41.47 1 1"/>
+    <text class="cls-3" transform="translate(427.74 55.34)"><tspan x="0" y="0">Lila </tspan><tspan class="cls-5" x="39.38" y="0">r</tspan><tspan x="46.96" y="0">ent</tspan><tspan class="cls-5" x="79.38" y="0">r</tspan><tspan class="cls-2" x="86.96" y="0">e de </tspan><tspan class="cls-5" x="133.14" y="0">l</tspan><tspan class="cls-4" x="138.12" y="0">’</tspan><tspan x="141.98" y="0">écol</tspan><tspan class="cls-6" x="183.3" y="0">e</tspan><tspan x="194.24" y="0">.</tspan></text>
+  </g>
+</svg>

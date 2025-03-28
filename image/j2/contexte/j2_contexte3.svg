@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 999 94.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-3 {
+        font-family: Kopik-Regular, Kopik;
+        font-size: 20px;
+      }
+
+      .cls-4 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-9 {
+        letter-spacing: 0em;
+      }
+
+      .cls-10 {
+        letter-spacing: .05em;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <polygon class="cls-1" points="1 1 985 11.12 916.31 55.92 998 93.5 21.42 84.83 97.54 41.47 1 1"/>
+    <text class="cls-3" transform="translate(244.11 40.34)"><tspan x="0" y="0">Il est ta</tspan><tspan class="cls-5" x="72.28" y="0">r</tspan><tspan class="cls-6" x="79.86" y="0">d</tspan><tspan x="91.96" y="0">, Lila doit se </tspan><tspan class="cls-4" x="215.36" y="0">r</tspan><tspan x="222.94" y="0">epose</tspan><tspan class="cls-2" x="282.94" y="0">r</tspan><tspan x="289.34" y="0">. Elle espè</tspan><tspan class="cls-5" x="389" y="0">r</tspan><tspan x="396.58" y="0">e se </tspan><tspan class="cls-4" x="440.9" y="0">r</tspan><tspan class="cls-7" x="448.48" y="0">é</tspan><tspan class="cls-9" x="460.11" y="0">v</tspan><tspan x="470.11" y="0">eiller dans </tspan><tspan x="174.81" y="27">un monde me</tspan><tspan class="cls-10" x="308.19" y="27">r</tspan><tspan class="cls-8" x="317.17" y="27">v</tspan><tspan x="327.17" y="27">eilleu</tspan><tspan class="cls-5" x="378.97" y="27">x</tspan><tspan x="388.69" y="27">.</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 999 94.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        font-family: Kopik-Regular, Kopik;
+        font-size: 20px;
+      }
+
+      .cls-4 {
+        letter-spacing: -.16em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-7 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-10 {
+        letter-spacing: 0em;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <polygon class="cls-1" points="1 1 985 11.12 916.31 55.92 998 93.5 21.42 84.83 97.54 41.47 1 1"/>
+    <text class="cls-3" transform="translate(242.71 40.34)"><tspan x="0" y="0">Lila est à </tspan><tspan class="cls-6" x="91.78" y="0">l</tspan><tspan class="cls-4" x="96.76" y="0">’</tspan><tspan class="cls-2" x="100.62" y="0">écol</tspan><tspan class="cls-7" x="141.94" y="0">e</tspan><tspan x="152.88" y="0">, les en</tspan><tspan class="cls-10" x="222.08" y="0">f</tspan><tspan x="229.54" y="0">ants se mo</tspan><tspan class="cls-8" x="336.92" y="0">q</tspan><tspan x="349.18" y="0">uent </tspan><tspan class="cls-9" x="398.8" y="0">t</tspan><tspan x="406.74" y="0">oujou</tspan><tspan class="cls-10" x="463.08" y="0">r</tspan><tspan x="470.86" y="0">s </tspan><tspan class="cls-6" x="486.7" y="0">d</tspan><tspan class="cls-4" x="499" y="0">’</tspan><tspan x="502.86" y="0">ell</tspan><tspan class="cls-7" x="525.35" y="0">e</tspan><tspan x="536.3" y="0">. </tspan><tspan x="18.15" y="27">Mais elle les igno</tspan><tspan class="cls-6" x="186.27" y="27">r</tspan><tspan class="cls-7" x="193.85" y="27">e</tspan><tspan x="204.79" y="27">. Ses </tspan><tspan class="cls-6" x="257.67" y="27">r</tspan><tspan class="cls-8" x="265.25" y="27">ê</tspan><tspan class="cls-10" x="276.89" y="27">v</tspan><tspan x="286.89" y="27">es </tspan><tspan class="cls-6" x="314.47" y="27">l</tspan><tspan class="cls-4" x="319.45" y="27">’</tspan><tspan x="323.31" y="27">ont </tspan><tspan class="cls-6" x="362.27" y="27">r</tspan><tspan x="369.85" y="27">endu plus </tspan><tspan class="cls-5" x="469.84" y="27">f</tspan><tspan x="477" y="27">o</tspan><tspan class="cls-11" x="490.28" y="27">r</tspan><tspan class="cls-10" x="498.46" y="27">t</tspan><tspan x="506.4" y="27">e!</tspan></text>
+  </g>
+</svg>
