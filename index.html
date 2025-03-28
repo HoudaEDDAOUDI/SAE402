@@ -90,9 +90,20 @@
             height: auto;
             width: 800px;
         }
+        .dialogue img{
+            height: auto;
+            width: 180px;
+            z-index: 50;
+            object-fit: contain;
+        }
 
 
         /*sectionMaison*/
+        #sectionMaison .dialogue1{
+            left: 400px;
+            top: 300px;
+        }
+
 
         #sectionMaison .maison {
             height: 250px;
@@ -153,6 +164,21 @@
 
         /*sectionEcole*/
 
+        #sectionEcole .dialogue1{
+            top: 400px;
+            left: 130px;
+            z-index: 10;
+        }
+        #sectionEcole .dialogue2{
+            top: 250px;
+            left: 150px;
+            z-index: 10;
+        }
+        #sectionEcole .dialogue3{
+            top: 300px;
+            left: 330px;
+            z-index: 10;
+        }
         #sectionEcole .ecoleSol {
             width: 100%;
             filter: grayscale(100%);
@@ -181,7 +207,7 @@
         #sectionEcole .harceleur2 {
             width: 70px;
             top: 150px !important;
-            left: 400px !important;
+            left: 450px !important;
         }
 
         #sectionEcole .soleil {
@@ -1387,9 +1413,15 @@
                 </span>
             </section>
             <section data-background-color="white" id="sectionMaison" data-transition="fade-in slide-in">
+                <!--Contexte-->
                 <div class="fade parallax contexte" style="--delay: 0.8s;">
                     <img src="image/j1/contexte/j1_contexte1_1.png" alt="j1">
                 </div>
+                <!--Dialogue-->
+                <div class="fade parallax dialogue dialogue1" style="--delay: 0.8s;">
+                    <img src="image/j1/dialogue/avant_ecole/j1_dialogue1.png" alt="j1">
+                </div>
+                <!--Image-->
                 <div class="fade parallax" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_maison/colline/colline_droite.svg" alt="colline droite"
                         class="collineDroite">
@@ -1418,9 +1450,21 @@
                 </div>
             </section>
             <section data-background-color="white" id="sectionEcole" data-transition="fade-in slide-in">
+                <!--Contexte-->
                 <div class="fade parallax contexte" style="--delay: 0.8s;">
                     <img src="image/j1/contexte/j1_contexte2_1.png" alt="j1">
                 </div>
+                <!--Dialogue-->
+                <div class="fade parallax dialogue dialogue1" style="--delay: 0.8s;">
+                    <img src="image/j1/dialogue/ecole/j1_dialogue2.png" alt="j1">
+                </div>
+                <div class="fade parallax dialogue dialogue2" style="--delay: 0.8s;">
+                    <img src="image/j1/dialogue/ecole/j1_dialogue3.png" alt="j1">
+                </div>
+                <div class="fade parallax dialogue dialogue3" style="--delay: 0.8s;">
+                    <img src="image/j1/dialogue/ecole/j1_dialogue4.png" alt="j1">
+                </div>
+                <!--Image-->
                 <div class="fade parallax" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_ecole/decor/ecole_sol.svg" alt="Ecole sol"
                          class="ecoleSol">
@@ -1459,10 +1503,13 @@
                 </div>
             </section>
             <section data-background-color="white" id="sectionMaison2" data-transition="fade-in slide-in">
+                <!--Contexte-->
                 <div class="fade parallax" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_maison/colline/colline_droite.svg" alt="colline droite"
                          class="collineDroite">
                 </div>
+                <!--Dialogue-->
+                <!--Image-->
                 <div class="fade parallax" style="--delay: 0.8s;">
                     <img data-depth="-0.02" src="image/decor_maison/colline/colline_gauche.svg" alt="colline gauche"
                          class="collineGauche">
@@ -1977,20 +2024,17 @@
                     <img data-depth="-0.07" src="image/decor_chateau/chemin_1.png" alt="chemin" class="">
                 </div>
             </section>
-            <section data-background-color="lightblue" id="sectionChateauJeu" data-transition="fade-in slide-in">
-                <div class="fade parallax contexte" style="--delay: 0.8s;">
-                    <img src="image/j3/contexte/j3_contexte6.png" alt="j1">
-                </div>
+            <section data-background-color="lightblue" id="sectionChateauJeu" data-transition="fade-in slide-in" class="sceneDragon">
                 <div class="fade parallax solChateaux" style="--delay: 0.8s;">
                     <img data-depth="0.04" src="image/decor_chateau/sol.png" alt="sol partie châteaux">
                 </div>
                 <div class="fade parallax chateau" style="--delay: 0.6s;">
                     <img data-depth="0.02" src="image/decor_chateau/chateau_1.png" alt="chateau" class="">
                 </div>
-                <div class="fade parallax dragon" style="--delay: 0.4s;">
-                    <img data-depth="-0.02" src="image/decor_chateau/dragon.svg" alt="dragon" class="">
+                <div class="dragon" style="position: absolute; z-index: 500 ; left: 100px; top: 400px; display: block">
+                    <img data-depth="-0.02" src="image/decor_chateau/dragon.svg" alt="dragon">
                 </div>
-                <div class="fade parallax feuillage1" style="--delay: 1.2s;">
+                <div class="buisson1" style="position: absolute; z-index: 500 ; left: 0px; top: 550px">
                     <img data-depth="0.03" src="image/decor_chateau/feuillage1.png" alt="feuillage1">
                 </div>
                 <div class="fade parallax feuillage2" style="--delay: 1.3s;">
@@ -2149,6 +2193,77 @@
     <script src="plugin/zoom/zoom.js"></script>
 
     <script>
+
+        // AUDIO -------------------------------------------
+        const slideAudio = {
+            "sectionMaison": "audio/page.mp3",
+            "sectionEcole": "audio/page.mp3",
+            "sectionMaison2": "audio/page.mp3",
+            "sectionChambre": "audio/page.mp3",
+            "sectionFees": "audio/page.mp3",
+            "sectionChambre2": "audio/page.mp3",
+            "sectionMaison3": "audio/page.mp3",
+            "sectionEcole2": "audio/page.mp3",
+            "sectionMaison4": "audio/page.mp3",
+            "sectionChambre3": "audio/page.mp3",
+            "sectionSirene": "audio/page.mp3",
+            "sectionChambre4": "audio/page.mp3",
+            "sectionMaison5": "audio/page.mp3",
+            "sectionEcole3": "audio/page.mp3",
+            "sectionMaison6": "audio/page.mp3",
+            "sectionChambre5": "audio/page.mp3",
+            "sectionChateau": "audio/page.mp3",
+            "sectionChateauJeu": "audio/page.mp3",
+            "sectionChateauGagner": "audio/page.mp3",
+            "sectionChambre6": "audio/page.mp3",
+            "sectionMaison7": "audio/page.mp3",
+            "sectionEcole4": "audio/page.mp3",
+        };
+
+        const ambianceAudio = {
+            "sectionEcole" : "audio/rire.mp3",
+            "sectionSirene" : "audio/underwater.mp3",
+            "sectionChateau" : "audio/chateau.mp3",
+            "sectionChateauJeu" : "audio/chateau.mp3",
+            "sectionChateauGagner" : "audio/chateau.mp3",
+            "sectionFees" : "audio/flute.mp3",
+        }
+
+        let audio = new Audio();
+        let ambianceAudioElement = new Audio();
+        let isAmbiancePlaying = false;
+
+        function playSlideAudio(event) {
+            let slide = event.currentSlide;
+            let slideId = slide.getAttribute("id");
+
+            if (slideId && slideAudio[slideId]) {
+                audio.src = slideAudio[slideId];
+                audio.play().catch(error => console.log("Erreur lors de la lecture de l'audio principal :", error));
+            }
+
+            if (slideId === "sectionEcole" ||
+                slideId === "sectionSirene" ||
+                slideId === "sectionChateau" ||
+                slideId === "sectionChateauJeu" ||
+                slideId === "sectionChateauGagner" ||
+                slideId === "sectionFees") {
+                if (!isAmbiancePlaying) {
+                    ambianceAudioElement.src = ambianceAudio[slideId];
+                    ambianceAudioElement.play().catch(error => console.log("Erreur lors de la lecture de l'audio d'ambiance :", error));
+                    isAmbiancePlaying = true;
+                }
+            }
+            else {
+                if (isAmbiancePlaying) {
+                    ambianceAudioElement.pause();
+                    ambianceAudioElement.currentTime = 0;
+                    isAmbiancePlaying = false;
+                }
+            }
+        }
+        // FIN AUDIO -------------------------------------------
+
         //INITIALISATION----------------------------------------------
         Reveal.initialize({
             hash: true,
@@ -2166,11 +2281,15 @@
             plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
         });
 
+        Reveal.on('slidechanged', playSlideAudio);
+        //FIN INITIALISATION----------------------------------------------
+
         //PARALLAX----------------------------------------------
         document.querySelectorAll('.parallax').forEach(parallax => {
             var parallaxInstance = new Parallax(parallax, { relativeInput: true });
             parallaxInstance.friction(0.2, 0.2, 0.3);
         });
+        //FIN PARALLAX----------------------------------------------
 
         //SLIDE----------------------------------------------
         function resetAnimations(slide) {
@@ -2234,59 +2353,20 @@
         if (Reveal.getCurrentSlide()) {
             resetAnimations(Reveal.getCurrentSlide());
         }
+        //FIN SLIDE----------------------------------------------
 
-        // AUDIO -------------------------------------------
-        const slideAudio = {
-            "sectionMaison": "audio/page.mp3",
-            "sectionEcole": "audio/page.mp3",
-            "sectionMaison2": "audio/page.mp3",
-            "sectionChambre": "audio/page.mp3",
-            "sectionFees": "audio/page.mp3",
-            "sectionChateau": "audio/page.mp3",
-            "sectionSirene": "audio/page.mp3"
-        };
+        //JEU DRAGON---------------------------------------------
+        document.addEventListener("DOMContentLoaded", function () {
+            const dragon = document.querySelector('.dragon');
+            if (!dragon) return;
 
-        const ambianceAudio = {
-            "sectionEcole" : "audio/rire.mp3",
-            "sectionChambre" : "audio/respiration.mp3"
-        }
-
-        let audio = new Audio();
-        let ambianceAudioElement = new Audio();  // Éléments audio pour l'ambiance
-        let isAmbiancePlaying = false;
-
-        function playSlideAudio(event) {
-            let slide = event.currentSlide;
-            let slideId = slide.getAttribute("id");
-
-            // Vérifier et jouer l'audio principal pour chaque slide
-            if (slideId && slideAudio[slideId]) {
-                audio.src = slideAudio[slideId];
-                audio.play().catch(error => console.log("Erreur lors de la lecture de l'audio principal :", error));
-            }
-
-            // Gérer l'audio d'ambiance pour sectionMaison
-            if (slideId === "sectionMaison") {
-                if (!isAmbiancePlaying) { // Si l'audio d'ambiance n'est pas déjà joué
-                    ambianceAudioElement.src = ambianceAudio[slideId];
-                    ambianceAudioElement.play().catch(error => console.log("Erreur lors de la lecture de l'audio d'ambiance :", error));
-                    isAmbiancePlaying = true; // Marquer comme joué
+            document.addEventListener('click', function (event) {
+                if (event.target.closest('.buisson1')) {
+                    dragon.style.display = 'none';
                 }
-            } else {
-                // Si on quitte la slide sectionMaison, arrêter l'audio d'ambiance
-                if (isAmbiancePlaying) {
-                    ambianceAudioElement.pause(); // Stopper l'audio d'ambiance
-                    ambianceAudioElement.currentTime = 0; // Réinitialiser à 0 pour éviter la reprise depuis un endroit arbitraire
-                    isAmbiancePlaying = false; // Marquer comme arrêté
-                }
-            }
-        }
-
-        Reveal.initialize({
-            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+            });
         });
-
-        Reveal.on('slidechanged', playSlideAudio);
+        //FIN JEU DRAGON---------------------------------------------
     </script>
 </body>
 
