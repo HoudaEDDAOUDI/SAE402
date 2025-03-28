@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>reveal.js</title>
+    <title>Les métamorphoses de Lila</title>
 
     <link rel="stylesheet" href="dist/reset.css">
     <link rel="stylesheet" href="dist/reveal.css">
@@ -300,6 +300,13 @@
             left: 330px;
             top: 250px;
         }
+        #sectionChambre .sac{
+            top:120px;
+            left: 650px;
+            width: 200px;
+            filter: grayscale(100%);
+            z-index: 100;
+        }
         #sectionChambre .fenetre {
             width: 500px;
             top: -150px !important;
@@ -441,6 +448,13 @@
             z-index: 2;
             filter: grayscale(100%);
         }
+        #sectionChambre2 .sac{
+            top:120px;
+            left: 650px;
+            width: 200px;
+            filter: grayscale(80%);
+            z-index: 100;
+        }
 
         #sectionChambre2 .sol {
             z-index: 1;
@@ -491,6 +505,11 @@
         }
 
         /*sectionMaison3*/
+
+        #sectionMaison3 .dialogue {
+            left: 380px;
+            top: 280px;
+        }
 
         #sectionMaison3 .maison {
             height: 250px;
@@ -549,6 +568,24 @@
         }
 
         /*sectionEcole2*/
+
+        #sectionEcole2 .dialogue1 {
+            left: 110px;
+            top: 360px;
+            z-index: 999;
+        }
+
+        #sectionEcole2 .dialogue2 {
+            left: 190px;
+            top: 260px;
+            z-index: 999;
+        }
+
+        #sectionEcole2 .dialogue3 {
+            left: 300px;
+            top: 300px;
+            z-index: 999;
+        }
 
         #sectionEcole2 .ecoleSol {
             width: 100%;
@@ -667,7 +704,17 @@
         }
 
         /*sectionChambre3*/
-
+        #sectionChambre3 .dialogue{
+            left: 330px;
+            top: 210px;
+        }
+        #sectionChambre3 .sac{
+            top:120px;
+            left: 650px;
+            width: 200px;
+            filter: grayscale(80%);
+            z-index: 100;
+        }
         #sectionChambre3 .fenetre {
             width: 500px;
             top: -150px !important;
@@ -725,6 +772,21 @@
         }
 
         /*sectionSirene*/
+        #sectionSirene .dialogue1{
+            left: 650px;
+            top: 100px;
+            z-index: 999;
+        }
+        #sectionSirene .dialogue2{
+            left: 1000px;
+            top: 230px;
+            z-index: 999;
+        }
+        #sectionSirene .dialogue3{
+            left: 155px;
+            top: 100px;
+            z-index: 999;
+        }
         #sectionSirene{
             width: 500px;
         }
@@ -802,7 +864,173 @@
             z-index: 4;
         }
 
+        /*sectionSireneJeu*/
+        #sectionSireneJeu{
+            width: 500px;
+        }
+        #sectionSireneJeu .eau{
+            margin: 0;
+            width: 1280px !important;
+        }
+        #sectionSireneJeu .sableDroite{
+            top: 250px !important;
+            left: 450px !important;
+            z-index: 2;
+            width: 900px !important;
+        }
+        #sectionSireneJeu .sableGauche{
+            top: 210px !important;
+            right: -200px !important;
+            width: 900px !important;
+            z-index: 3;
+        }
+        #sectionSireneJeu .algue1{
+            top: 100px !important;
+            right: 250px !important;
+            width: 150px !important;
+            z-index: 4;
+        }
+        #sectionSireneJeu .algue2{
+            left: 1100px;
+            top: 170px;
+            z-index: 1;
+            width: 100px;
+        }
+        #sectionSireneJeu .coquillage{
+            top: 160px;
+            left: 300px;
+            width: 100px;
+            z-index: 4;
+        }
+        #sectionSireneJeu .crabe{
+            bottom: 300px;
+            left: 50px;
+            width: 70px;
+        }
+        #sectionSireneJeu .hyppocampe{
+            bottom: 100px;
+            left: 150px;
+            width: 70px;
+            z-index: 4;
+        }
+        #sectionSireneJeu .poisson{
+            bottom: 100px;
+            left: 850px;
+            width: 150px;
+            z-index: 4;
+        }
+        #sectionSireneJeu .lilaSirene{
+            bottom: 20px;
+            left: 550px;
+            width: 150px;
+            z-index: 4;
+        }
+        #sectionSireneJeu .sarahSirene{
+            top: 180px;
+            left: 850px;
+            width: 250px;
+            z-index: 4;
+
+        }
+        #sectionSireneJeu .sarahSirene img:hover{
+            transform: scale(1.5);
+        }
+        #sectionSireneJeu .garsSirene{
+            bottom: 80px;
+            left: 350px;
+            width: 100px;
+            z-index: 4;
+        }
+        /*sectionSireneJeuGagner*/
+        #sectionSireneGagner{
+            width: 500px;
+        }
+        #sectionSireneGagner .eau{
+            margin: 0;
+            width: 1280px !important;
+        }
+        #sectionSireneGagner .sableDroite{
+            top: 250px !important;
+            left: 450px !important;
+            z-index: 2;
+            width: 900px !important;
+        }
+        #sectionSireneGagner .sableGauche{
+            top: 210px !important;
+            right: -200px !important;
+            width: 900px !important;
+            z-index: 3;
+        }
+        #sectionSireneGagner .algue1{
+            top: 100px !important;
+            right: 250px !important;
+            width: 150px !important;
+            z-index: 4;
+        }
+        #sectionSireneGagner .algue2{
+            left: 1100px;
+            top: 170px;
+            z-index: 1;
+            width: 100px;
+        }
+        #sectionSireneGagner .coquillage{
+            top: 160px;
+            left: 300px;
+            width: 100px;
+            z-index: 4;
+        }
+        #sectionSireneGagner .crabe{
+            bottom: 300px;
+            left: 50px;
+            width: 70px;
+        }
+        #sectionSireneGagner .hyppocampe{
+            bottom: 100px;
+            left: 150px;
+            width: 70px;
+            z-index: 4;
+        }
+        #sectionSireneGagner .poisson{
+            bottom: 100px;
+            left: 850px;
+            width: 150px;
+            z-index: 4;
+        }
+        #sectionSireneGagner .lilaSirene{
+            bottom: 20px;
+            left: 550px;
+            width: 150px;
+            z-index: 4;
+        }
+        #sectionSireneGagner .sarahSirene{
+            top: 180px;
+            left: 850px;
+            width: 250px;
+            z-index: 4;
+
+        }
+        #sectionSireneGagner .sarahSirene img:hover{
+            transform: scale(1.5);
+        }
+        #sectionSireneGagner .garsSirene{
+            bottom: 80px;
+            left: 350px;
+            width: 100px;
+            z-index: 4;
+        }
+
          /*sectionChambre4*/
+        #sectionChambre4 .dialogue1 {
+            top:250px;
+            left: 300px;
+        }
+        #sectionChambre4 .sac{
+            top:120px;
+            left: 650px;
+            width: 200px;
+            filter: grayscale(60%);
+            z-index: 100;
+        }
 
         #sectionChambre4 .fenetre {
             width: 500px;
@@ -918,6 +1146,16 @@
         }
 
         /*sectionEcole3*/
+        #sectionEcole3 .dialogue1 {
+            top:360px;
+            left: 120px;
+            z-index: 150;
+        }
+        #sectionEcole3 .dialogue2 {
+            top:280px;
+            left: 270px;
+            z-index: 150;
+        }
 
         #sectionEcole3 .ecoleSol {
             width: 100%;
@@ -1039,6 +1277,13 @@
             top:260px;
             left: 320px;
         }
+        #sectionChambre5 .sac{
+            top:120px;
+            left: 650px;
+            width: 200px;
+            filter: grayscale(60%);
+            z-index: 100;
+        }
 
         #sectionChambre5 .fenetre {
             width: 500px;
@@ -1095,7 +1340,16 @@
         }
 
        /*sectionChateau*/
-
+        #sectionChateau .dialogue1{
+            top:290px;
+            left: 160px;
+            z-index: 100;
+        }
+        #sectionChateau .dialogue2{
+            top:130px;
+            left: 530px;
+            z-index: 100;
+        }
         #sectionChateau .solChateaux {
             height: 450px;
             width: 1320px;
@@ -1192,6 +1446,12 @@
         }
         /*sectionChateauGagner*/
 
+        #sectionChateauGagner .dialogue1{
+            top:450px;
+            left: 100px;
+            z-index: 100;
+        }
+
         #sectionChateauGagner .solChateaux {
             height: 450px;
             width: 1320px;
@@ -1262,6 +1522,12 @@
             top: -150px !important;
             left: 500px !important;
             z-index: 2;
+        }
+        #sectionChambre6 .sac{
+            top:120px;
+            left: 650px;
+            width: 200px;
+            z-index: 100;
         }
 
         #sectionChambre6 .sol {
@@ -1589,6 +1855,9 @@
                     <img data-depth="0.04" src="image/decor_chambre/sol.svg" alt="sol"
                          class="sol">
                 </div>
+                <div class="fade parallax sac" style="--delay: 0s;">
+                    <img data-depth="-0.01" src="image/fille/sac/sac1.svg" alt="sol">
+                </div>
                 <div class="fade parallax" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_chambre/fenetre.svg" alt="fenetre"
                          class="fenetre">
@@ -1662,7 +1931,7 @@
                     <img data-depth="0.03" src="image/decor_fee/fee/fee_violette.svg" alt="fée violette">
                 </div>
                 <div class="fade parallax fee_rouge" style="--delay: 0.7s;">
-                    <img data-depth="-0.03" src="image/decor_fee/fee/fée_rouge.svg" alt="fée rouge">
+                    <img data-depth="-0.03" src="image/decor_fee/fee/fee_rouge.svg" alt="fée rouge">
                 </div>
             </section>
             <section data-background-color="white" id="sectionChambre2" data-transition="fade-in slide-in"> <!--cornflowerblue pour la couleur bleu-->
@@ -1672,6 +1941,9 @@
                          class="sol">
                 </div>
                 <!--Image--->
+                <div class="fade parallax sac" style="--delay: 0s;">
+                    <img data-depth="-0.01" src="image/fille/sac/sac2.svg" alt="sol">
+                </div>
                 <div class="fade parallax" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_chambre/fenetre.svg" alt="fenetre"
                          class="fenetre">
@@ -1702,9 +1974,15 @@
                 </div>
             </section>
             <section data-background-color="white" id="sectionMaison3" data-transition="fade-in slide-in">
+                <!--Contexte-->
                 <div class="fade parallax contexte" style="--delay: 0.8s;">
                     <img src="image/j2/contexte/j2_contexte1.png" alt="j1">
                 </div>
+                <!--Dialogue-->
+                <div class="fade parallax dialogue dialogue" style="--delay: 0.8s;">
+                    <img src="image/j2/dialogue/avant_ecole/j2_dialogue1.png" alt="j1">
+                </div>
+                <!--Image-->
                 <div class="fade parallax" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_maison/colline/colline_droite.svg" alt="colline droite"
                          class="collineDroite">
@@ -1733,9 +2011,21 @@
                 </div>
             </section>
             <section data-background-color="white" id="sectionEcole2" data-transition="fade-in slide-in">
+                <!--Contexte-->
                 <div class="fade parallax contexte" style="--delay: 0.8s;">
                     <img src="image/j2/contexte/j2_contexte2.png" alt="j1">
                 </div>
+                <!--Dialogue-->
+                <div class="fade parallax dialogue dialogue1" style="--delay: 0.8s;">
+                    <img src="image/j2/dialogue/ecole/j2_dialogue2.png" alt="j2">
+                </div>
+                <div class="fade parallax dialogue dialogue2" style="--delay: 0.8s;">
+                    <img src="image/j2/dialogue/ecole/j2_dialogue3.png" alt="j2">
+                </div>
+                <div class="fade parallax dialogue dialogue3" style="--delay: 0.8s;">
+                    <img src="image/j2/dialogue/ecole/j2_dialogue4.png" alt="j2">
+                </div>
+                <!--Image-->
                 <div class="fade parallax" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_ecole/decor/ecole_sol.svg" alt="Ecole sol"
                          class="ecoleSol">
@@ -1773,7 +2063,6 @@
                          class="nuage2">
                 </div>
             </section>
-
             <section data-background-color="white" id="sectionMaison4" data-transition="fade-in slide-in">
 
                 <div class="fade parallax" style="--delay: 0s;">
@@ -1804,8 +2093,17 @@
                 </div>
             </section>
             <section data-background-color="white" id="sectionChambre3" data-transition="fade-in slide-in"> <!--cornflowerblue pour la couleur bleu-->
+                <!--CONTEXTE-->
                 <div class="fade parallax contexte" style="--delay: 0.8s;">
                     <img src="image/j2/contexte/j2_contexte3.png" alt="j1">
+                </div>
+                <!--DIALOGUE-->
+                <div class="fade parallax dialogue dialogue1" style="--delay: 0.8s;">
+                    <img src="image/j4/dialogue/ecole/j4_dialogue2.png" alt="j1">
+                </div>
+                <!--Image-->
+                <div class="fade parallax sac" style="--delay: 0s;">
+                    <img data-depth="-0.01" src="image/fille/sac/sac2.svg" alt="sol">
                 </div>
                 <div class="fade parallax" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_chambre/sol.svg" alt="sol"
@@ -1841,8 +2139,78 @@
                 </div>
             </section>
             <section data-background-color="lightblue" id="sectionSirene" data-transition="fade-in slide-in">
+                <!-- Contexte -->
                 <div class="fade parallax contexte" style="--delay: 0.8s;">
                     <img src="image/j2/contexte/j2_contexte4.png" alt="j1">
+                </div>
+                <!--Dialogue-->
+                <div class="fade parallax dialogue dialogue1" style="--delay: 0.8s;">
+                    <img src="image/j2/dialogue/reve/j2_dialogue6.png" alt="j1">
+                </div>
+                <div class="fade parallax dialogue dialogue2" style="--delay: 0.8s;">
+                    <img src="image/j2/dialogue/reve/j2_dialogue7.png" alt="j1">
+                </div>
+                <div class="fade parallax dialogue dialogue3" style="--delay: 0.8s;">
+                    <img src="image/j2/dialogue/reve/j2_dialogue8.png" alt="j1">
+                </div>
+                <!--Image--->
+                <div class="fade parallax item1" style="--delay: 0s;">
+                    <img data-depth="0.04" src="image/decor_mer/decor_mer/eau_caillou.svg" alt="eau" class="eau">
+                </div>
+                <div class="fade parallax sableDroite" style="--delay: 1s;">
+                    <img data-depth="-0.07" src="image/decor_mer/decor_mer/sable_droite.svg" alt="sable">
+                </div>
+                <div class="fade parallax sableGauche" style="--delay: 1.5s;">
+                    <img data-depth="0.05" src="image/decor_mer/decor_mer/sable_gauche.svg" alt="sable">
+                </div>
+                <div class="fade parallax algue1" style="--delay: 1.8s;">
+                    <img data-depth="0.07" src="image/decor_mer/algues/algue1.svg" alt="algue">
+                </div>
+                <div class="fade parallax algue2" style="--delay: 1.9s;">
+                    <img data-depth="-0.04" src="image/decor_mer/algues/algue2.svg" alt="algue">
+                </div>
+                <div class="fade parallax coquillage" style="--delay: 1.9s;">
+                    <img data-depth="0.03" src="image/decor_mer/algues/coquillage.svg" alt="coquillage">
+                </div>
+                <div class="fade parallax crabe" style="--delay: 1.9s;">
+                    <img data-depth="-0.05" src="image/decor_mer/animaux/crabe.svg" alt="crabe">
+                </div>
+                <div class="fade parallax hyppocampe" style="--delay: 1.9s;">
+                    <img data-depth="0.05" src="image/decor_mer/animaux/hyppocampe.svg" alt="hyppocampe">
+                </div>
+                <div class="fade parallax poisson" style="--delay: 1.9s;">
+                    <img data-depth="-0.02" src="image/decor_mer/animaux/poissons.svg" alt="poisson">
+                </div>
+                <div class="fade parallax lilaSirene" style="--delay: 1.9s;">
+                    <img data-depth="0.02" src="image/decor_mer/personnages/lila_sirene.svg" alt="lila sirene">
+                </div>
+                <div class="fade parallax sarahSirene" style="--delay: 1.9s;">
+                    <img data-depth="-0.03" src="image/decor_mer/personnages/sirene_fille.svg" alt="sarah sirene">
+                </div>
+                <div class="fade parallax garsSirene" style="--delay: 1.9s;">
+                    <img data-depth="0.01" src="image/decor_mer/personnages/sirene_gars.svg" alt="gars sirene">
+                </div>
+            </section>
+            <section data-background-color="cornflowerblue" id="sectionSireneJeu" data-transition="fade-in slide-in" class="sceneSirene">
+
+                <div style="position: absolute; z-index: 500 ; left: 100px; top: 300px; width: 100px;">
+                    <img data-depth="0.04" src="image/decor_mer/piece1.png" alt="piece1" class="piece1">
+                </div>
+
+                <div style="position: absolute; z-index: 500 ; left: 500px; top: 150px; width: 100px;">
+                    <img data-depth="0.04" src="image/decor_mer/piece2.png" alt="piece2" class="piece2">
+                </div>
+
+                <div style="position: absolute; z-index: 500 ; left: 700px; top: 250px; width: 100px;">
+                    <img data-depth="0.04" src="image/decor_mer/piece3.png" alt="piece3" class="piece3">
+                </div>
+
+                <div style="position: absolute; z-index: 500 ; left: 1000px; top: 400px; width: 100px;">
+                    <img data-depth="0.04" src="image/decor_mer/piece4.png" alt="piece4" class="piece4">
+                </div>
+
+                <div class="fade parallax contexte" style="--delay: 0.8s;">
+                    <img src="image/j2/contexte/j2_contexte5.png" alt="j1">
                 </div>
                 <div class="fade parallax item1" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_mer/decor_mer/eau_caillou.svg" alt="eau" class="eau">
@@ -1881,14 +2249,59 @@
                     <img data-depth="0.01" src="image/decor_mer/personnages/sirene_gars.svg" alt="gars sirene">
                 </div>
             </section>
-            <section data-background-color="cornflowerblue" id="sectionSireneJeu" data-transition="fade-in slide-in">
-            <div class="fade parallax contexte" style="--delay: 0.8s;">
-                <img src="image/j2/contexte/j2_contexte5.png" alt="j1">
-            </div>
+            <section data-background-color="cornflowerblue" id="sectionSireneGagner" data-transition="fade-in slide-in" class="sceneSirene">
+                <div class="fade parallax contexte" style="--delay: 0.8s;">
+                    <img src="image/j1/contexte/j1_contexte6_1.png" alt="j1">
+                </div>
+                <div class="fade parallax item1" style="--delay: 0s;">
+                    <img data-depth="0.04" src="image/decor_mer/decor_mer/eau_caillou.svg" alt="eau" class="eau">
+                </div>
+                <div class="fade parallax sableDroite" style="--delay: 1s;">
+                    <img data-depth="-0.07" src="image/decor_mer/decor_mer/sable_droite.svg" alt="sable">
+                </div>
+                <div class="fade parallax sableGauche" style="--delay: 1.5s;">
+                    <img data-depth="0.05" src="image/decor_mer/decor_mer/sable_gauche.svg" alt="sable">
+                </div>
+                <div class="fade parallax algue1" style="--delay: 1.8s;">
+                    <img data-depth="0.07" src="image/decor_mer/algues/algue1.svg" alt="algue">
+                </div>
+                <div class="fade parallax algue2" style="--delay: 1.9s;">
+                    <img data-depth="-0.04" src="image/decor_mer/algues/algue2.svg" alt="algue">
+                </div>
+                <div class="fade parallax coquillage" style="--delay: 1.9s;">
+                    <img data-depth="0.03" src="image/decor_mer/algues/coquillage.svg" alt="coquillage">
+                </div>
+                <div class="fade parallax crabe" style="--delay: 1.9s;">
+                    <img data-depth="-0.05" src="image/decor_mer/animaux/crabe.svg" alt="crabe">
+                </div>
+                <div class="fade parallax hyppocampe" style="--delay: 1.9s;">
+                    <img data-depth="0.05" src="image/decor_mer/animaux/hyppocampe.svg" alt="hyppocampe">
+                </div>
+                <div class="fade parallax poisson" style="--delay: 1.9s;">
+                    <img data-depth="-0.02" src="image/decor_mer/animaux/poissons.svg" alt="poisson">
+                </div>
+                <div class="fade parallax lilaSirene" style="--delay: 1.9s;">
+                    <img data-depth="0.02" src="image/decor_mer/personnages/lila_sirene.svg" alt="lila sirene">
+                </div>
+                <div class="fade parallax sarahSirene" style="--delay: 1.9s;">
+                    <img data-depth="-0.03" src="image/decor_mer/personnages/sirene_fille.svg" alt="sarah sirene">
+                </div>
+                <div class="fade parallax garsSirene" style="--delay: 1.9s;">
+                    <img data-depth="0.01" src="image/decor_mer/personnages/sirene_gars.svg" alt="gars sirene">
+                </div>
             </section>
             <section data-background-color="white" id="sectionChambre4" data-transition="fade-in slide-in"> <!--cornflowerblue pour la couleur bleu-->
+                <!--Dialogue-->
                 <div class="fade parallax contexte" style="--delay: 0.8s;">
                     <img src="image/j3/contexte/j3_contexte1.png" alt="j1">
+                </div>
+                <!--Dialogue-->
+                <div class="fade parallax dialogue dialogue1" style="--delay: 0.8s;">
+                    <img src="image/j3/dialogue/avant_ecole/j3_dialogue1.png" alt="j2">
+                </div>
+                <!---Image-->
+                <div class="fade parallax sac" style="--delay: 0s;">
+                    <img data-depth="-0.01" src="image/fille/sac/sac3.svg" alt="sol">
                 </div>
                 <div class="fade parallax" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_chambre/sol.svg" alt="sol"
@@ -1952,9 +2365,18 @@
                 </div>
             </section>
             <section data-background-color="white" id="sectionEcole3" data-transition="fade-in slide-in">
+                <!--Contexte-->
                 <div class="fade parallax contexte" style="--delay: 0.8s;">
                     <img src="image/j3/contexte/j3_contexte2.png" alt="j1">
                 </div>
+                <!--Dialogue-->
+                <div class="fade parallax dialogue dialogue1" style="--delay: 0.8s;">
+                    <img src="image/j3/dialogue/ecole/j3_dialogue2.png" alt="j2">
+                </div>
+                <div class="fade parallax dialogue dialogue2" style="--delay: 0.8s;">
+                    <img src="image/j3/dialogue/ecole/j3_dialogue3.png" alt="j2">
+                </div>
+                <!---Image-->
                 <div class="fade parallax" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_ecole/decor/ecole_sol.svg" alt="Ecole sol"
                          class="ecoleSol">
@@ -2030,9 +2452,12 @@
                 </div>
                 <!---Dialogue---->
                 <div class="fade parallax dialogue dialogue1" style="--delay: 0.8s;">
-                    <img src="image/j4/dialogue/ecole/j4_dialogue2.png" alt="j1">
+                    <img src="image/j3/dialogue/reve/j3_dialogue4.png" alt="j1">
                 </div>
                 <!---Image---->
+                <div class="fade parallax sac" style="--delay: 0s;">
+                    <img data-depth="-0.01" src="image/fille/sac/sac3.svg" alt="sol">
+                </div>
                 <div class="fade parallax" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_chambre/sol.svg" alt="sol"
                          class="sol">
@@ -2070,6 +2495,12 @@
                 <div class="fade parallax contexte" style="--delay: 0.8s;">
                     <img src="image/j3/contexte/j3_contexte5.png" alt="j1">
                 </div>
+                <div class="fade parallax dialogue dialogue1" style="--delay: 0.8s;">
+                    <img src="image/j3/dialogue/reve/j3_dialogue5.png" alt="j1">
+                </div>
+                <div class="fade parallax dialogue dialogue2" style="--delay: 0.8s;">
+                    <img src="image/j3/dialogue/reve/j3_dialogue6.png" alt="j1">
+                </div>
                 <div class="fade parallax solChateaux" style="--delay: 0.8s;">
                     <img data-depth="0.04" src="image/decor_chateau/sol.png" alt="sol partie châteaux">
                 </div>
@@ -2096,10 +2527,11 @@
                 <div class="fade parallax solChateaux" style="--delay: 0.8s;">
                     <img data-depth="0.04" src="image/decor_chateau/sol.png" alt="sol partie châteaux">
                 </div>
+
                 <div class="fade parallax chateau" style="--delay: 0.6s;">
                     <img data-depth="0.02" src="image/decor_chateau/chateau_1.png" alt="chateau" class="">
                 </div>
-                <div class="dragon" style="position: absolute; z-index: 500 ; left: 100px; top: 400px; display: block">
+                <div class="dragon dragonEffet" style="position: absolute; z-index: 500 ; left: 100px; top: 400px;">
                     <img data-depth="-0.02" src="image/decor_chateau/dragon.svg" alt="dragon">
                 </div>
                 <div class="buisson1" style="position: absolute; z-index: 500 ; left: 0px; top: 550px">
@@ -2116,8 +2548,14 @@
                 </div>
             </section>
             <section data-background-color="lightblue" id="sectionChateauGagner" data-transition="fade-in slide-in">
+                <div class="fade parallax contexte" style="--delay: 0.8s;">
+                    <img src="image/j1/contexte/j1_contexte5_1.png" alt="j1">
+                </div>
                 <div class="fade parallax chevalier1" style="--delay: 0.7s;">
                     <img data-depth="0.07" src="image/decor_chateau/chevalier_2.png" alt="chevalier" class="">
+                </div>
+                <div class="fade parallax dialogue dialogue1" style="--delay: 0.8s;">
+                    <img src="image/j3/dialogue/reve/j3_dialogue7.png" alt="j1">
                 </div>
                 <div class="fade parallax chevalier2" style="--delay: 0.8s;">
                     <img data-depth="0.07" src="image/decor_chateau/chevalier_2.png" alt="chevalier" class="">
@@ -2145,6 +2583,9 @@
                 <div class="fade parallax" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_chambre/sol.svg" alt="sol"
                          class="sol">
+                </div>
+                <div class="fade parallax sac" style="--delay: 0s;">
+                    <img data-depth="-0.01" src="image/fille/sac/sac4.svg" alt="sol">
                 </div>
                 <div class="fade parallax" style="--delay: 0s;">
                     <img data-depth="0.04" src="image/decor_chambre/fenetre.svg" alt="fenetre"
@@ -2279,37 +2720,41 @@
 
         // AUDIO -------------------------------------------
         const slideAudio = {
-            "sectionMaison": "audio/page.mp3",
-            "sectionEcole": "audio/page.mp3",
-            "sectionMaison2": "audio/page.mp3",
-            "sectionChambre": "audio/page.mp3",
-            "sectionFees": "audio/page.mp3",
-            "sectionChambre2": "audio/page.mp3",
-            "sectionMaison3": "audio/page.mp3",
-            "sectionEcole2": "audio/page.mp3",
-            "sectionMaison4": "audio/page.mp3",
-            "sectionChambre3": "audio/page.mp3",
-            "sectionSirene": "audio/page.mp3",
-            "sectionChambre4": "audio/page.mp3",
-            "sectionMaison5": "audio/page.mp3",
-            "sectionEcole3": "audio/page.mp3",
-            "sectionMaison6": "audio/page.mp3",
-            "sectionChambre5": "audio/page.mp3",
-            "sectionChateau": "audio/page.mp3",
-            "sectionChateauJeu": "audio/page.mp3",
-            "sectionChateauGagner": "audio/page.mp3",
-            "sectionChambre6": "audio/page.mp3",
-            "sectionMaison7": "audio/page.mp3",
-            "sectionEcole4": "audio/page.mp3",
+            "sectionMaison": "./audio/page.mp3",
+            "sectionEcole": "./audio/page.mp3",
+            "sectionMaison2": "./audio/page.mp3",
+            "sectionChambre": "./audio/page.mp3",
+            "sectionFees": "./audio/page.mp3",
+            "sectionChambre2": "./audio/page.mp3",
+            "sectionMaison3": "./audio/page.mp3",
+            "sectionEcole2": "./audio/page.mp3",
+            "sectionMaison4": "./audio/page.mp3",
+            "sectionChambre3": "./audio/page.mp3",
+            "sectionSirene": "./audio/page.mp3",
+            "sectionSireneJeu": "./audio/page.mp3",
+            "sectionSireneGagner": "./audio/page.mp3",
+            "sectionChambre4": "./audio/page.mp3",
+            "sectionMaison5": "./audio/page.mp3",
+            "sectionEcole3": "./audio/page.mp3",
+            "sectionMaison6": "./audio/page.mp3",
+            "sectionChambre5": "./audio/page.mp3",
+            "sectionChateau": "./audio/page.mp3",
+            "sectionChateauJeu": "./audio/page.mp3",
+            "sectionChateauGagner": "./audio/page.mp3",
+            "sectionChambre6": "./audio/page.mp3",
+            "sectionMaison7": "./audio/page.mp3",
+            "sectionEcole4": "./audio/page.mp3",
         };
 
         const ambianceAudio = {
-            "sectionEcole" : "audio/rire.mp3",
-            "sectionSirene" : "audio/underwater.mp3",
-            "sectionChateau" : "audio/chateau.mp3",
-            "sectionChateauJeu" : "audio/chateau.mp3",
-            "sectionChateauGagner" : "audio/chateau.mp3",
-            "sectionFees" : "audio/flute.mp3",
+            "sectionEcole" : "./audio/rire.mp3",
+            "sectionSirene" : "./audio/underwater.mp3",
+            "sectionSireneJeu" : "./audio/underwater.mp3",
+            "sectionSireneGagner" : "./audio/underwater.mp3",
+            "sectionChateau" : "./audio/chateau.mp3",
+            "sectionChateauJeu" : "./audio/chateau.mp3",
+            "sectionChateauGagner" : "./audio/chateau.mp3",
+            "sectionFees" : "./audio/flute.mp3",
         }
 
         let audio = new Audio();
@@ -2327,6 +2772,8 @@
 
             if (slideId === "sectionEcole" ||
                 slideId === "sectionSirene" ||
+                slideId === "sectionSireneJeu" ||
+                slideId === "sectionSireneGagner" ||
                 slideId === "sectionChateau" ||
                 slideId === "sectionChateauJeu" ||
                 slideId === "sectionChateauGagner" ||
@@ -2440,16 +2887,103 @@
 
         //JEU DRAGON---------------------------------------------
         document.addEventListener("DOMContentLoaded", function () {
-            const dragon = document.querySelector('.dragon');
-            if (!dragon) return;
+            const dragon = document.querySelector('.dragonEffet');
+            const buisson = document.querySelector('.buisson1');
 
-            document.addEventListener('click', function (event) {
-                if (event.target.closest('.buisson1')) {
-                    dragon.style.display = 'none';
-                }
+            if (!dragon || !buisson) return; // Vérifie si les éléments existent
+
+            buisson.addEventListener('click', function () {
+                dragon.style.display = 'none';
+                console.log('Le dragon a été vaincu !');
             });
         });
         //FIN JEU DRAGON---------------------------------------------
+        // JEU PUZZLE----------------------------------------------
+        // PUZZLE ET VICTOIRE
+        document.addEventListener("DOMContentLoaded", function () {
+            const sirene = document.querySelector('.sceneSirene');
+            if (!sirene) return;
+
+            function checkWinCondition() {
+                for (let i = 1; i <= 4; i++) {
+                    if (localStorage.getItem(`piece${i}`) !== "collected") {
+                        return false;
+                    }
+                }
+                return true;
+            }
+
+            function showWinModal() {
+                if (!document.getElementById('winModal')) {
+                    const modalHTML = `
+                <div id="winModal" class="modal-overlay">
+                    <div class="modal-content" style="z-index: 100;">
+                        <h2>Bravo ! 🎉</h2>
+                        <p>Tu as collecté toutes les pièces !</p>
+                    </div>
+                </div>
+            `;
+                    sirene.insertAdjacentHTML('beforeend', modalHTML);
+                }
+            }
+
+            function checkCollectedPieces() {
+                for (let i = 1; i <= 4; i++) {
+                    if (localStorage.getItem(`piece${i}`) === "collected") {
+                        const piece = document.querySelector(`.piece${i}`);
+                        const pieceInv = document.querySelector(`.piece${i}Inv`);
+                        if (piece) piece.style.display = 'none';
+                        if (pieceInv) pieceInv.style.display = 'block';
+                    }
+                }
+                if (checkWinCondition()) {
+                    showWinModal();
+                }
+            }
+
+            document.addEventListener('click', function (event) {
+                if (event.target.matches('.piece1, .piece2, .piece3, .piece4')) {
+                    const pieceNumber = event.target.classList[0].replace('piece', '');
+                    localStorage.setItem(`piece${pieceNumber}`, "collected");
+                    event.target.style.display = 'none';
+                    const pieceInv = document.querySelector(`.piece${pieceNumber}Inv`);
+                    if (pieceInv) {
+                        pieceInv.style.display = 'block';
+                    }
+                    if (checkWinCondition()) {
+                        showWinModal();
+                    }
+                }
+            });
+
+            sirene.addEventListener('mouseenter', function () {
+                if (!document.getElementById('puzzleSirene')) {
+                    const puzzleHTML = `
+                <div id="puzzleSirene" style="position: relative; width: 100%; height: 100%; z-index: 50;">
+                    <div class="piece1Inv" style="width: 200px; position: absolute; top: 0px; left: 450px; display: none;">
+                        <img src="image/decor_mer/piece1.png" alt="piece1"/>
+                    </div>
+                    <div class="piece2Inv" style="width: 200px; position: absolute; top: 0px; left: 650px; display: none;">
+                        <img src="image/decor_mer/piece2.png" alt="piece2"/>
+                    </div>
+                    <div class="piece3Inv" style="width: 200px; position: absolute; top: 140px; left: 650px; display: none;">
+                        <img src="image/decor_mer/piece3.png" alt="piece3"/>
+                    </div>
+                    <div class="piece4Inv" style="width: 200px; position: absolute; top: 140px; left: 450px; display: none;">
+                        <img src="image/decor_mer/piece4.png" alt="piece4"/>
+                    </div>
+                </div>
+            `;
+                    sirene.insertAdjacentHTML('beforeend', puzzleHTML);
+                    checkCollectedPieces();
+                }
+            });
+
+            checkCollectedPieces();
+
+
+        });
+        //FIN JEU PUZZLE-----------------------------------------
     </script>
 </body>
 
